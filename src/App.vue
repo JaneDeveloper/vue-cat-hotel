@@ -15,9 +15,9 @@ import hotelLogo from '@/assets/images/hotel_logo.png'
         <ul class="nav_links">
           <li><router-link to="/">Home</router-link></li>
           <li><router-link to="/about">About Us</router-link></li>
-          <li><a href="staff.html">Our Staff</a></li>
-          <li><a href="calculator.html">Calculator</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><router-link to="/staff">Our Staff</router-link></li>
+          <li><router-link to="/calculator">Calculator</router-link></li>
+          <li><router-link to="/contact">Contact Us</router-link></li>
         </ul>
       </nav>
       <p class="big_text">The luxury hotel for<br> your beloved friends.<br>Your pets deserve it.</p>
