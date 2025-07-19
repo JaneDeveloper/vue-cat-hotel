@@ -2,9 +2,8 @@
 </script>
 
 <template>
-    <section class="main_container">
-            
-            <section class="main">
+    
+    <article class="calculator_container">
                <div class="scores_of_weight">
                 <h2>Find out the ideal weight for your pet.</h2>
                     <h3>Step 1. Evaluate your cat's BCS by examining your pet's ribs, abdomen, and waistline by sight and touch.</h3>
@@ -103,25 +102,7 @@
                 </div>
 
         
-            </section>
-
-
-            <footer>
-                <dl>
-                    <dt>Address</dt>
-                    <dd>4 Cat's Drive, Grand Rapids, USA</dd>
-                    <dt>Phone</dt>
-                    <dd>745.999.9999</dd>
-                    <dt>Email</dt>
-                    <dd>mew_hotel@gmail.com</dd>
-                </dl>
-                Contact Info 
-                Copyright
-            </footer>
-
-
-
-        </section>
+    </article>
 
 </template>
 

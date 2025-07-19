@@ -9,10 +9,9 @@ import JamesK from '@/assets/images/JamesK.jpg'
 
 <template>
 
-<section class="main_container">
-    <section class="main">
+    <article class="staff_container">
         <div class="staff_carousel" data-carousel>
-            <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+           <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
             <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
             
             <div class="card_list" data-slides>
@@ -64,26 +63,11 @@ import JamesK from '@/assets/images/JamesK.jpg'
                     </p>
                 </div>
             </div>
-        </div>
-    </section>
+        </div>  
+    </article>
     
-    
-    
-    <footer>
-        <dl>
-            <dt>Address</dt>
-            <dd>4 Cat's Drive, Grand Rapids, USA</dd>
-            <dt>Phone</dt>
-            <dd>745.999.9999</dd>
-            <dt>Email</dt>
-            <dd>mew_hotel@gmail.com</dd>
-        </dl>
-        Contact Info
-        Copyright
-    </footer>
 
 
-</section>
   
 
 

@@ -22,8 +22,26 @@ import hotelLogo from '@/assets/images/hotel_logo.png'
       </nav>
       <p class="big_text">The luxury hotel for<br> your beloved friends.<br>Your pets deserve it.</p>
     </header>
-    <!-- This renders the matched page component -->
-     <router-view />
+    
+    
+    
+    
+    <main>
+      <router-view />
+    </main>
+    
+    
+    <footer>
+      <dl>
+    <dt>Address</dt>
+    <dd>4 Cat's Drive, Grand Rapids, USA</dd>
+    <dt>Phone</dt>
+    <dd>745.999.9999</dd>
+    <dt>Email</dt>
+    <dd>mew_hotel@gmail.com</dd>
+      </dl>
+    </footer>
+
   </div>
 
   

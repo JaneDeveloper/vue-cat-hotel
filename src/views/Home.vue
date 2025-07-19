@@ -16,9 +16,8 @@ import birthdayImg from '@/assets/images/birthday.jpg'
 
 <template>
 
-
-  
-  <article class="welcome_container">
+<section class="home_container">
+    <article class="welcome_container">
     <div class="inside_welcome">
       <h2>Welcome to Our Grand Mew Hotel</h2>
       <div class="text">
@@ -32,11 +31,9 @@ import birthdayImg from '@/assets/images/birthday.jpg'
         <p> After your vacation NOT ONLY YOU will have a lot of things to tell, but your cat as well!</p>
       </div>
     </div>
-  </article>
-
-
-
-  <article class="three_photos">
+    </article>
+    
+    <article class="three_photos">
     <div class="inside_three_photos">
       <img class="fenya_one" :src="cat1" alt="Scottish straight" />
       <img class="luna_one" :src="luna1" alt="Korat" />
@@ -44,9 +41,9 @@ import birthdayImg from '@/assets/images/birthday.jpg'
     </div>
     
     <div class="square"></div>
-  </article>
+    </article>
   
- <article class="carousel_part">
+    <article class="carousel_part">
     
     <h2 class="title_carousel">Our Services</h2>
     <button class="pre_btn"><img :src="beforeImg" alt="" height="50" width="auto" /></button>
@@ -116,20 +113,14 @@ import birthdayImg from '@/assets/images/birthday.jpg'
       </article>
     </section>
   
-  </article>
-      
-      <footer>
+    </article>
 
-      </footer> 
-
-
-        
-
-
-
-
+</section>
   
 </template>
+
+
+
 
 <style scoped>
 
