@@ -117,34 +117,23 @@ nav a {
 h1 {
     display:flex;
 }
-  /*.navbar {
-    background-color: grey;
-    height: 100px;
-    grid-column-start:1;
-    grid-column-end: 4;
-    display:grid;
-    grid-template-columns: 20% 65% 15%;
-    z-index: 999;
-    box-shadow:1px 1px 20px #383838;  
-} */
 
- /* 
+
+ 
   .logo_cat {
     margin-left:20px;
     margin-top:20px;
     height:50%;
-  } */
+  } 
 
 
- /* 
- 
   .nav_links {
     list-style: none;
    margin-top: 20px; 
    text-align: right; 
     z-index:5000;
   }
-   */
+   
 
 
 
@@ -420,7 +409,7 @@ footer {
 .photo_hotel, .about_hotel_text {
     grid-row: 1/2;
 }
-/*.hide {
+/*==.hide {
 	display: none;
  
 } */
@@ -436,7 +425,7 @@ footer {
     text-shadow: 4px 4px 4px #000000;
     opacity: 0.7;
 }
-/*
+
 .info_hotel, #hidden_text {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     align-self:center;
@@ -465,8 +454,7 @@ footer {
 }
 .info_hotel p {
     height:auto;
-}  */
-
+}  
 /*Staff page starts here */
 
 
@@ -931,23 +919,13 @@ fieldset {
 textarea {
     margin-top: 2%;
 } 
-/* Responsive Hamburger-navigation starts here */
+/* Responsive Hamburger-navigation starts here  */
 
 
-/*@media all and (max-width: 1146px) {
-.navbar {
-   grid-template-columns: 40% 40% 20%;
-
-
-    }
-    
+@media all and (max-width: 1146px) {
     
 .nav_links {
     display:block;
-    grid-column-start:1;
-    grid-column-end: 4;
-    grid-row-start:2;
-    grid-row-end:3;
     list-style: none;
     margin-left: 30px;
     text-align: center; 
@@ -955,13 +933,13 @@ textarea {
 .nav_links li {
     display: block;
     padding: 20px;
-    }
-*,
+    } }
+ *,
 *::after,
 *::before {
     box-sizing:border-box;
 
-}
+} 
 :root {
     --bar-width: 35px;
     --bar-height: 5px;
@@ -971,7 +949,7 @@ textarea {
     --background: white;
     --animation-timing:200ms ease-in-out;
     --hamburger-height: calc(var(--bar-height)*3 + var(--hamburger-gap)*2);
-}
+} 
 
 .hamburger_menu {
     --x-width:calc(var(--hamburger-height)*1.41421356237);
@@ -983,7 +961,7 @@ textarea {
     cursor: pointer;
     grid-column-start:3;
     grid-column-end: 4;
-}
+} 
 
 
 .hamburger_menu::before,
@@ -997,7 +975,7 @@ border-radius: 9999px;
 transform-origin: left center;
 transition:opacity var(--animation-timing), width var(--animation-timing), rotate var(--animation-timing), translate var(--animation-timing),
  background-color var(--animation-timing);
-}
+} 
 
 .hamburger_menu input {
     appearance: none;
@@ -1016,14 +994,14 @@ transition:opacity var(--animation-timing), width var(--animation-timing), rotat
     rotate: -45deg;
     width: var(--x-width);
     translate: 0 calc(var(--bar-height)/2);
-}
+} 
 .hamburger_menu input:checked{
     opacity:0;
     width:0;
 
-}
+} 
 
-nav {
+/*nav {
     grid-column-start:1;
     grid-column-end: 4;
     border-bottom-left-radius: 10px;
@@ -1037,13 +1015,13 @@ nav {
 
 
 }
-
-.hamburger_menu:has(input:checked) + nav {
+/*
+.hamburger_menu:has(input:checked) + .nav_links {
     height: 350px;
 
 }
 
-.hamburger_menu:has(input:checked) + nav a {
+.hamburger_menu:has(input:checked) + .nav_links a {
     font-size: 15px;
 }
 
@@ -1064,7 +1042,7 @@ nav {
 
 /* Responsive website for 2560 screen device */
 
-/*@media all and (min-width: 2560px) {
+@media all and (min-width: 2560px) {
  
 
       .nav_links a {
@@ -1072,10 +1050,6 @@ nav {
         margin-left: 60px;
       }
   
-    .navbar {
-
-        grid-template-columns:15% 85%;
-      }
     .big_text {
         font-size: 80px;
         margin-bottom: 20%;
@@ -1264,20 +1238,16 @@ nav {
     }
     
       
-} */
+} 
 /*Responsive website for 2000 screen device.*/
-/*@media all and (max-width:2559px) and (min-width:2000px) {
+@media all and (max-width:2559px) and (min-width:2000px) {
 
 
       .nav_links a {
   
         margin-left: 40px;
       }
-  
-    .navbar {
-    
-        grid-template-columns:15% 85%;
-      }
+
 
     .inside_welcome h2 {
         font-size: 50px;
@@ -1475,25 +1445,18 @@ nav {
     }
     
  
-} */
-
-
+} 
 
 
 
 /*Responsive website for 1532 screen device.*/
-/*@media all and (max-width: 1999px) and (min-width: 1532px)  {
+@media all and (max-width: 1999px) and (min-width: 1532px)  {
 
     
    
       .nav_links a {
 
         margin-left: 30px;
-      }
-  
-    .navbar {
-   
-        grid-template-columns:15% 85%;
       }
 
 
@@ -1686,10 +1649,10 @@ nav {
     }
     
 
-} */
+} 
 
 /*Responsive website for 1531 screen device.*/
-/*@media all and (max-width: 1531px) and (min-width: 1441px)  {
+@media all and (max-width: 1531px) and (min-width: 1441px)  {
 
       
 
@@ -1697,11 +1660,7 @@ nav {
   
         margin-left: 30px;
       }
-  
-    .navbar {
 
-        grid-template-columns:15% 85%;
-      }
     .big_text {
         font-size: 50px;
     }
@@ -1867,22 +1826,17 @@ nav {
         }
 
 
-} */
+} 
 
 
 /*Responsive website for 1440 screen device.*/
 
-/*@media all and (max-width:1440px) and (min-width: 1386px) {
+@media all and (max-width:1440px) and (min-width: 1386px) {
 
 
       .nav_links a {
     
         margin-left: 30px;
-      }
-  
-    .navbar {
-     
-        grid-template-columns:15% 85%;
       }
 
     .big_text {
@@ -2076,12 +2030,12 @@ nav {
             font-size:20px;
         }
     
-    } */
+    } 
 
 
     /* Responsive website for 1385 screen device */
 
-/*@media all and (max-width:1385px) and (min-width: 1255px) {
+@media all and (max-width:1385px) and (min-width: 1255px) {
 
     
 
@@ -2090,10 +2044,6 @@ nav {
         margin-left: 25px;
       }
   
-    .navbar {
-   
-        grid-template-columns:15% 85%;
-      }
     .big_text {
         font-size: 45px;
     }
@@ -2286,22 +2236,17 @@ nav {
         }
     
    
-} */
+} 
 
-/*Responsive website for 1254 screen device. */
-/*@media all and (max-width: 1254px) and (min-width: 1147px) {
+/*Responsive website for 1254 screen device. 
+@media all and (max-width: 1254px) and (min-width: 1147px) {
     
 
       .nav_links a {
   
         margin-left: 20px;
       }
-  
-    .navbar {
 
-        grid-template-columns:15% 85%;
-      }
-  
     .main {
         grid-template-columns: 70% 30%;
     }
@@ -2499,11 +2444,11 @@ nav {
             font-size:13px;
         }
 
-} */
+} 
+*/
 
-
-/*Responsive website for 1146 screen device. */
-/*@media all and (max-width: 1146px) and (min-width:995px) {
+/*Responsive website for 1146 screen device. 
+@media all and (max-width: 1146px) and (min-width:995px) {
 
     .big_text {
         font-size: 40px;
@@ -2716,13 +2661,13 @@ nav {
     }
     footer {
         font-size:12px;
-    }
-}   */
+    } 
+}  */
 
 
 
 /* Responsive website for 994 screen device */
-/*@media all and (max-width:994px) and (min-width:889px) {
+@media all and (max-width:994px) and (min-width:889px) {
 
     .big_text {
         font-size: 35px;
@@ -2938,11 +2883,11 @@ nav {
         font-size:12px;
     }
 
-} */
+} 
 
 
 /* Responsive website for 768 screen device */
-/*@media all and (max-width:888px) and (min-width:600px) {
+@media all and (max-width:888px) and (min-width:600px) {
     header::after {
         width: 100%;
     }
@@ -3155,13 +3100,13 @@ footer {
 
   
 
-} */
+} 
 /* Responsive website for 599 screen device */
 
 
 
 
-/*@media all and (max-width: 599px) and (min-width:474px) {
+@media all and (max-width: 599px) and (min-width:474px) {
     header::after {
         width: 100%;
     }
@@ -3412,10 +3357,10 @@ footer {
     font-size:12px;
 }
   
-} */
+} 
 
 /* Responsive website for 473 screen device */
-/*@media all and (max-width: 473px) and (min-width:431px) {
+@media all and (max-width: 473px) and (min-width:431px) {
 
     header::after {
         width: 100%;
@@ -3668,12 +3613,12 @@ footer {
     font-size:12px;
 }
   
-} */
+} 
 
 
 /* Responsive website for 430 screen device */
 
-/*@media all and (max-width:430px) and (min-width:324px) {
+@media all and (max-width:430px) and (min-width:324px) {
   
     header::after {
         width: 100%;
@@ -3937,7 +3882,7 @@ footer {
     font-size:11px;
 }
 
-}  */
+}  
 
 
 
@@ -3946,7 +3891,7 @@ footer {
 
 /* Responsive website for 323 screen device */
 
-/*@media all and (max-width:323px) {
+@media all and (max-width:323px) {
  
     header::after {
         width: 100%;
@@ -4210,7 +4155,7 @@ footer {
 }
   
 }
-*/
+
 
 
   
