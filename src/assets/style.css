@@ -51,6 +51,10 @@ header::after {
     position:relative;
     opacity:0.8;
     z-index: 1;
+    grid-column-start:1;
+    grid-column-end: 4;
+    grid-row-start:2;
+    grid-row-end:3;
 
  } 
 
@@ -74,8 +78,8 @@ header {
   }
   nav {
     font-family: verdana, sans-serif;
-    width:100%;
-    height:100%;
+    width:auto;
+    height:auto;
     grid-column-start:1;
     grid-column-end: 4;
     grid-row-start:1;
@@ -91,6 +95,14 @@ header {
     margin-right: auto;
     margin-left: 1.0625rem;
 }
+.logo_cat {
+    width: 100%;
+    height: auto;
+    object-fit: contain;   
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+  }
 .nav_links {
     list-style: none;
     z-index:5000;
@@ -111,29 +123,11 @@ nav a {
 .hamburger_menu {
     display:none;
 }
-.logo_cat {
-    height:2.5rem;
-}
-h1 {
-    display:flex;
-}
 
 
- 
-  .logo_cat {
-    margin-left:20px;
-    margin-top:20px;
-    height:50%;
-  } 
 
 
-  .nav_links {
-    list-style: none;
-   margin-top: 20px; 
-   text-align: right; 
-    z-index:5000;
-  }
-   
+
 
 
 
@@ -924,16 +918,42 @@ textarea {
 
 @media all and (max-width: 1146px) {
     
+  .logo_cat {
+    width: 100%;
+    height: auto;
+    object-fit: contain;   
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+  }
+.logo {
+    grid-column-start:1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end:2;
+    background-color: #790001;
+
+}
 .nav_links {
-    display:block;
     list-style: none;
-    margin-left: 30px;
     text-align: center; 
-    } 
+    background-color: lightblue;
+    height: 0;
+    font-size: 0;
+    overflow:hidden;
+    transition: .5s all;
+    grid-column-start:1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end:3;
+    /*margin-top:-14px;*/
+    }
+
+    
 .nav_links li {
     display: block;
     padding: 20px;
-    } }
+    } 
  *,
 *::after,
 *::before {
@@ -961,6 +981,8 @@ textarea {
     cursor: pointer;
     grid-column-start:3;
     grid-column-end: 4;
+    grid-row-start:1;
+    grid-row-end: 2;
 } 
 
 
@@ -1001,31 +1023,31 @@ transition:opacity var(--animation-timing), width var(--animation-timing), rotat
 
 } 
 
-/*nav {
-    grid-column-start:1;
-    grid-column-end: 4;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    height: 0;
+nav {
     font-size: 0;
-    overflow:hidden;
     transition: .5s all;
     background-color:grey;
+    display:grid;
+    grid-template-columns: 20% 65% 15%;
+    grid-template-rows:auto auto;
+    z-index: 999;
+ 
     
-
-
 }
-/*
+
+
+
 .hamburger_menu:has(input:checked) + .nav_links {
     height: 350px;
+   
 
 }
 
 .hamburger_menu:has(input:checked) + .nav_links a {
     font-size: 15px;
-}
+} 
 
-}  */
+}  
 
 
 
@@ -1041,7 +1063,7 @@ transition:opacity var(--animation-timing), width var(--animation-timing), rotat
 
 
 /* Responsive website for 2560 screen device */
-
+/*
 @media all and (min-width: 2560px) {
  
 
@@ -1238,9 +1260,9 @@ transition:opacity var(--animation-timing), width var(--animation-timing), rotat
     }
     
       
-} 
+} */
 /*Responsive website for 2000 screen device.*/
-@media all and (max-width:2559px) and (min-width:2000px) {
+/*@media all and (max-width:2559px) and (min-width:2000px) {
 
 
       .nav_links a {
@@ -1445,12 +1467,12 @@ transition:opacity var(--animation-timing), width var(--animation-timing), rotat
     }
     
  
-} 
+} */
 
 
 
 /*Responsive website for 1532 screen device.*/
-@media all and (max-width: 1999px) and (min-width: 1532px)  {
+/*@media all and (max-width: 1999px) and (min-width: 1532px)  {
 
     
    
@@ -1649,10 +1671,10 @@ transition:opacity var(--animation-timing), width var(--animation-timing), rotat
     }
     
 
-} 
+} */
 
 /*Responsive website for 1531 screen device.*/
-@media all and (max-width: 1531px) and (min-width: 1441px)  {
+/*@media all and (max-width: 1531px) and (min-width: 1441px)  {
 
       
 
@@ -1826,12 +1848,12 @@ transition:opacity var(--animation-timing), width var(--animation-timing), rotat
         }
 
 
-} 
+} */
 
 
 /*Responsive website for 1440 screen device.*/
 
-@media all and (max-width:1440px) and (min-width: 1386px) {
+/*@media all and (max-width:1440px) and (min-width: 1386px) {
 
 
       .nav_links a {
@@ -2030,12 +2052,12 @@ transition:opacity var(--animation-timing), width var(--animation-timing), rotat
             font-size:20px;
         }
     
-    } 
+    } */
 
 
     /* Responsive website for 1385 screen device */
 
-@media all and (max-width:1385px) and (min-width: 1255px) {
+/*@media all and (max-width:1385px) and (min-width: 1255px) {
 
     
 
@@ -2236,10 +2258,10 @@ transition:opacity var(--animation-timing), width var(--animation-timing), rotat
         }
     
    
-} 
+} */
 
 /*Responsive website for 1254 screen device. 
-@media all and (max-width: 1254px) and (min-width: 1147px) {
+/*@media all and (max-width: 1254px) and (min-width: 1147px) {
     
 
       .nav_links a {
@@ -2667,7 +2689,7 @@ transition:opacity var(--animation-timing), width var(--animation-timing), rotat
 
 
 /* Responsive website for 994 screen device */
-@media all and (max-width:994px) and (min-width:889px) {
+/*@media all and (max-width:994px) and (min-width:889px) {
 
     .big_text {
         font-size: 35px;
@@ -2884,10 +2906,10 @@ transition:opacity var(--animation-timing), width var(--animation-timing), rotat
     }
 
 } 
-
+*/
 
 /* Responsive website for 768 screen device */
-@media all and (max-width:888px) and (min-width:600px) {
+/*@media all and (max-width:888px) and (min-width:600px) {
     header::after {
         width: 100%;
     }
@@ -3100,13 +3122,13 @@ footer {
 
   
 
-} 
+} */
 /* Responsive website for 599 screen device */
 
 
 
 
-@media all and (max-width: 599px) and (min-width:474px) {
+/*@media all and (max-width: 599px) and (min-width:474px) {
     header::after {
         width: 100%;
     }
@@ -3358,9 +3380,9 @@ footer {
 }
   
 } 
-
+*/
 /* Responsive website for 473 screen device */
-@media all and (max-width: 473px) and (min-width:431px) {
+/*@media all and (max-width: 473px) and (min-width:431px) {
 
     header::after {
         width: 100%;
@@ -3614,11 +3636,11 @@ footer {
 }
   
 } 
-
+*/
 
 /* Responsive website for 430 screen device */
 
-@media all and (max-width:430px) and (min-width:324px) {
+/*@media all and (max-width:430px) and (min-width:324px) {
   
     header::after {
         width: 100%;
@@ -3883,7 +3905,7 @@ footer {
 }
 
 }  
-
+*/
 
 
 
@@ -3891,7 +3913,7 @@ footer {
 
 /* Responsive website for 323 screen device */
 
-@media all and (max-width:323px) {
+/*@media all and (max-width:323px) {
  
     header::after {
         width: 100%;
@@ -4154,7 +4176,7 @@ footer {
     font-size:11px;
 }
   
-}
+} */
 
 
 

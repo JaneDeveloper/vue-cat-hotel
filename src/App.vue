@@ -22,6 +22,7 @@ import hotelLogo from '@/assets/images/hotel_logo.png'
       </nav>
       <p class="big_text">The luxury hotel for<br> your beloved friends.<br>Your pets deserve it.</p>
     </header>
+
     
     
     
