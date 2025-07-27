@@ -1,11 +1,10 @@
 
 html {
-    box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
 * {
-    box-sizing: inherit;
+    box-sizing:border-box;
   }
 
 body {
@@ -51,7 +50,7 @@ header::after {
     grid-row-start:2;
     grid-row-end:3;  
     place-self: center;
-    font-size: 3.5vw;
+    font-size: 3.5vw; 
     /*left:-535px; */
     position:relative;
     opacity:0.8;
@@ -72,15 +71,13 @@ header {
     grid-row-end:2;
     display:grid;
     grid-template-columns: 50% 10% 40%;
-    grid-template-rows:13% 87%;
+    grid-template-rows:14% 89%;
     background-color:purple;
 
 
   }
   nav {
     font-family: verdana, sans-serif;
-    width:auto;
-    height:auto;
     grid-column-start:1;
     grid-column-end: 4;
     grid-row-start:1;
@@ -101,6 +98,7 @@ header {
   }
   
   .logo_cat {
+    padding:25px;
     width: 100%;
     height: auto;
     max-width: 120px; 
@@ -125,7 +123,7 @@ nav a {
 
 .hamburger_menu {
     display:none;
-}
+}  
 
 
 
@@ -921,6 +919,19 @@ textarea {
 
 @media all and (max-width: 1146px) {
     
+    
+    nav {
+        font-size: 0;
+        transition: .5s all;
+        background-color:grey;
+        display:grid;
+        grid-template-columns: 20% 65% 15%;
+        grid-template-rows:auto auto;
+        z-index: 999;
+     
+        
+    }
+    
   .logo_cat {
     width: 100%;
     height: auto;
@@ -933,9 +944,11 @@ textarea {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end:2;
-    margin-right: auto;
-    padding: 16px; 
+    place-self: center;
     box-sizing: border-box;
+    margin: 0;
+    background-color:pink;
+
 
 }
 
@@ -945,19 +958,19 @@ textarea {
     background-color: lightblue;
     height: 0;
     font-size: 0;
-    overflow:hidden;
+    overflow:hidden; 
     transition: .5s all;
     grid-column-start:1;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end:3;
-    margin-top:-4.5px;
+   /* margin-top:-4.5px; */
+    padding-left:0;
     }
 
     
 .nav_links li {
     display: block;
-    padding: 20px;
     } 
  *,
 *::after,
@@ -1029,19 +1042,10 @@ transition:opacity var(--animation-timing), width var(--animation-timing), rotat
 
 } 
 
-nav {
-    font-size: 0;
-    transition: .5s all;
-    background-color:grey;
-    display:grid;
-    grid-template-columns: 20% 65% 15%;
-    grid-template-rows:auto auto;
-    z-index: 999;
- 
-    
-}
+
 .hamburger_menu:has(input:checked) + .nav_links {
     height: 320px;
+    
    
 
 }
@@ -1059,7 +1063,8 @@ nav {
 @media all and (min-width: 2560px) {
 
     .logo_cat {  
-        min-width: 200px;
+        min-width: 300px;
+     
       }
       .nav_links a {
         font-size: 25px;
@@ -2646,6 +2651,12 @@ nav {
 /* Responsive website for 994 screen device */
 @media all and (max-width:994px) and (min-width:889px) {
 
+    header { 
+        grid-template-rows:13% 87%;
+    }
+
+
+
     :root {
         --bar-width: 34px;
         --bar-height: 3px;
@@ -2859,6 +2870,9 @@ nav {
     :root {
         --bar-height: 2px;
     } 
+        header { 
+        grid-template-rows:12.5% 88.5%;
+    }
     .nav_links a {
         font-size: 1.0625rem;
       }
@@ -3067,8 +3081,11 @@ footer {
 /* Responsive website for 599 screen device */
 
 @media all and (max-width: 599px) and (min-width:474px) {
-
+    header { 
+        grid-template-rows:11.5% 88.5%;
+    }
     :root {
+        --bar-width: 33px;
         --bar-height: 2px;
     } 
     .nav_links a {
@@ -3321,7 +3338,14 @@ footer {
 
 /* Responsive website for 473 screen device */
 @media all and (max-width: 473px) and (min-width:431px) {
+    :root {
+        --bar-width: 30px;
+        --bar-height: 2px;
+    } 
 
+    header { 
+        grid-template-rows:10% 90%; 
+    }
     :root {
         --bar-height: 2px;
     } 
@@ -3577,8 +3601,12 @@ footer {
 
 @media all and (max-width:430px) and (min-width:324px) {
     :root {
+        --bar-width: 28px;
         --bar-height: 2px;
     } 
+    header { 
+        grid-template-rows:9% 91%; 
+    }
     .nav_links a {
         font-size: 1rem;
       }
@@ -3596,25 +3624,7 @@ footer {
     header::after {
         width: 100%;
     }
-    .nav_links {
-        height:auto;
-        width: 70vw;
-        margin-top:13px;
-        margin-left:auto;
-        margin-right: auto;
-    }
-    .nav_links a {
-        font-size: 17px;
-    }
 
-    nav {
-        margin-top:-14px;
-    }
-    .hamburger_menu {
-        margin-top:23px;
-        margin-left:auto;
-        margin-right:auto;
-    }
     .main {
         grid-template-columns: 100%;
     }
@@ -3862,7 +3872,11 @@ footer {
 
 @media all and (max-width:323px) {
 
+    header { 
+        grid-template-rows:8% 92%; 
+    }
     :root {
+        --bar-width: 26px;
         --bar-height: 2px;
     } 
     .nav_links a {
@@ -3900,10 +3914,6 @@ footer {
    }
     .three_photos {
     display:none;
-   }
-   .big_text {
-    font-size:20px;
-    margin-top:45px;
    }
 
    .service_short_description {
