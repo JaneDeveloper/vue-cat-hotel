@@ -1,4 +1,7 @@
 <script setup>
+import { ref } from 'vue'
+const menuOpen = ref(false)
+
 import hotelLogo from '@/assets/images/hotel_logo.png'
 
 </script>
@@ -7,12 +10,12 @@ import hotelLogo from '@/assets/images/hotel_logo.png'
 
   <div class="container">
     <header>
-      <nav>
+      <nav :style="menuOpen ? {'grid-template-rows': 'auto 320px'} : {'grid-template-rows': 'auto'}">
         <h1 class="logo"><img class="logo_cat" :src="hotelLogo" alt="Cat Logo"></h1>
         <label class="hamburger_menu">
           <input type="checkbox" v-model="menuOpen">
         </label>
-        <ul class="nav_links">
+        <ul class="nav_links" :class="{ show: menuOpen }">
           <li><router-link to="/">Home</router-link></li>
           <li><router-link to="/about">About Us</router-link></li>
           <li><router-link to="/staff">Our Staff</router-link></li>

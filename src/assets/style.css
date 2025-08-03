@@ -925,6 +925,7 @@ textarea {
 
     .logo {
         margin:0;
+        padding: 10px;
         grid-column-start:1;
         grid-column-end: 2;
         grid-row-start: 1;
@@ -938,6 +939,7 @@ textarea {
         object-fit: contain;
         display: block;
         width: 6.25rem;
+
     }
 
     nav {
@@ -945,7 +947,6 @@ textarea {
         background-color:grey;
         display:grid;
         grid-template-columns: 20% 65% 15%;
-        grid-template-rows:auto;
         z-index: 999;
     }
  
@@ -958,8 +959,6 @@ textarea {
         list-style: none;
         text-align: center; 
         background-color: lightblue;
-        height: 0;
-        font-size: 0;
         overflow:hidden; 
         transition: .5s all;
         grid-column-start:1;
@@ -967,9 +966,16 @@ textarea {
         grid-row-start: 2;
         grid-row-end:3;
         /* margin-top:-4.5px; */
-        padding-left:0;
-        padding-right:0.3125rem;
+
     }
+    .nav_links.show {
+        display: block;
+        font-size: 1rem;
+        background-color: lightblue;
+        padding:0;
+        margin:0;
+        
+      }
     
     .nav_links li {
         display: block;
@@ -1042,16 +1048,8 @@ textarea {
         opacity:0;
         width:0;
     }
-    
-    .hamburger_menu:has(input:checked) + .nav_links {
-        height: 320px;
-    }
-    .hamburger_menu:has(input:checked) + .nav_links a {
-        font-size: 15px;
-    }
+   
 }
-
-
 
 
 
@@ -1059,6 +1057,10 @@ textarea {
 /* Responsive website for 2560 screen device */
 
 @media all and (min-width: 2560px) {
+
+    .logo {
+        margin-left: 2.5rem;
+    }
     
     .inside_welcome h2 {
         font-size: 60px;
@@ -1247,6 +1249,9 @@ textarea {
 }
 /*Responsive website for 2000 screen device.*/
 @media all and (max-width:2559px) and (min-width:2000px) {
+    .logo {
+        margin-left: 2.5rem;
+    }
 
     .inside_welcome h2 {
         font-size: 50px;
@@ -1448,6 +1453,17 @@ textarea {
 
 /*Responsive website for 1532 screen device.*/
 @media all and (max-width: 1999px) and (min-width: 1532px)  {
+    .logo {
+        margin-left: 2.5rem;
+    }
+    .logo_cat {
+        width: 10vw;
+    }
+    .nav_links a {
+        font-size: 1.25rem;
+    }
+
+
 
 
     .inside_three_photos {
@@ -1639,11 +1655,18 @@ textarea {
 } 
 /*Responsive website for 1531 screen device.*/
 @media all and (max-width: 1531px) and (min-width: 1441px)  {
+    .logo {
+        margin-left: 2.5rem;
+    }
+    .logo_cat {
+        width: 10vw;
+    }
+    .nav_links a {
+        font-size: 1.125rem;
+    }
 
-  
-      .nav_links a {
-        font-size: 1.375rem;
-      }
+
+
 
     .inside_welcome h2 {
         font-size: 35px;
@@ -1813,17 +1836,19 @@ textarea {
 /*Responsive website for 1440 screen device.*/
 
 @media all and (max-width:1440px) and (min-width: 1386px) {
-    
+    .logo {
+        margin-left: 2.5rem;
+    }
+    .logo_cat {
+        width: 10vw;
+    }
     .nav_links a {
-        font-size: 1.1875rem;
+        font-size: 1.125rem;
     }
     .big_text {
         font-size: 2.8125rem;
     }
-    .logo_cat {
-        width: 16vw;
-    }
-
+   
 
 
 
@@ -2023,17 +2048,19 @@ textarea {
     /* Responsive website for 1385 screen device */
 
 @media all and (max-width:1385px) and (min-width: 1255px) {
-    
+    .logo {
+        margin-left: 2.5rem;
+    }
+    .logo_cat {
+        width: 10vw;
+    }
     .nav_links a {
-        font-size: 1.0625rem;
+        font-size: 1.125rem;
     }
     .big_text {
         font-size: 2.8125rem;
     }
-    .logo_cat {
-        width: 16vw;
-    }
-
+  
 
 
 
@@ -2230,17 +2257,19 @@ textarea {
 
 /*Responsive website for 1254 screen device. */
 @media all and (max-width: 1254px) and (min-width: 1147px) {
-
+    .logo {
+        margin-left: 2.5rem;
+    }
+    .logo_cat {
+        width: 10vw;
+    }
     .nav_links a {
-        font-size: 1.0625rem;
+        font-size: 1rem;
     }
     .big_text {
         font-size: 2.8125rem;
     }
-    .logo_cat {
-        width: 16vw;
-        background-color:#00292a;
-    }
+
 
 
 
@@ -2866,7 +2895,7 @@ textarea {
         font-size: 1.0625rem;
     }
     .big_text {
-        font-size: 2.5rem;
+        font-size: 2.1875rem;
         grid-column-start:1;
         grid-column-end: 4; 
         place-self: center;
@@ -3627,7 +3656,6 @@ footer {
         font-size: 1rem;
     }
    
-
       .big_text {
         font-size: 1.875rem;
         grid-column-start:1;
@@ -3644,7 +3672,7 @@ footer {
         margin-left:1.25rem;
     }
     .logo_cat {  
-        width: 5.3125rem;
+        width: 4.6875rem;
     }
     
     nav {
@@ -3907,31 +3935,44 @@ footer {
 /* Responsive website for 323 screen device */
 
 @media all and (max-width:323px) {
-
-    header { 
-        grid-template-rows:8% 92%; 
+    
+    .logo {
+        place-self:auto;
+        margin-left:1.25rem;
     }
+    .logo_cat {  
+        width: 4.375rem;
+    }
+    
+    nav {
+        grid-template-columns: 65% 15% 20%;
+    }
+    
     :root {
-        --bar-width: 26px;
+        --bar-width: 24px;
         --bar-height: 2px;
-    } 
+        --hamburger-gap: 4px;
+    }
+
     .nav_links a {
         font-size: 1rem;
-      }
-      .logo_cat {  
-        max-width: 100px;
-      }
-
-      .big_text {
-        font-size: 1.875rem;
+    }
+    
+    .big_text {
+        font-size: 1.5625rem;
         grid-column-start:1;
         grid-column-end: 4; 
         place-self: center;
-      }
+    }
  
     header::after {
         width: 100%;
     }
+
+
+
+
+
 
     .main {
         grid-template-columns: 100%;
