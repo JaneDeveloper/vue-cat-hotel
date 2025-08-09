@@ -18,7 +18,6 @@ import birthdayImg from '@/assets/images/birthday.jpg'
 
 <section class="home_container">
     <article class="welcome_container">
-    <div class="inside_welcome">
       <h2>Welcome to Our Grand Mew Hotel</h2>
       <div class="text">
         <p> Dear guests, we are glad to see you on our website.</p>
@@ -30,10 +29,9 @@ import birthdayImg from '@/assets/images/birthday.jpg'
         <p> At our hotel they will not only have a great time but find a lot of good friends.</p>
         <p> After your vacation NOT ONLY YOU will have a lot of things to tell, but your cat as well!</p>
       </div>
-    </div>
     </article>
     
-    <article class="three_photos">
+    <article class="three_photos_container">
     <div class="inside_three_photos">
       <img class="fenya_one" :src="cat1" alt="Scottish straight" />
       <img class="luna_one" :src="luna1" alt="Korat" />
