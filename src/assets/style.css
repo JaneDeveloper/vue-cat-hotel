@@ -148,8 +148,8 @@ nav a {
     grid-template-columns: 1fr 20px 0.7fr;
     grid-template-rows:auto 20px auto;
     background-color: purple;
-    margin-right:1.875rem;
-    margin-left: 1.875rem;
+    margin-right:1.25rem;
+    margin-left: 1.25rem;
  }
 
 .welcome_container {
@@ -160,21 +160,30 @@ nav a {
     background-color: green;
     border-left: 4px solid #585a59;
     border-right: 4px solid #585a59;
-    width:50vw;
+    width:53vw;
     margin-left:auto;
     margin-right:auto;
 }
 
-h2 {background-color: pink;
+h2 {
+    background-color: pink;
     font-weight: 800;
     text-align:center;
     color:#282928;
+    font-size: clamp(1rem, 1.5vw + 0.5rem, 3rem);
+         
   }
   .text {
     background-color: #DEDFE4;
     color:#282928;
-    padding:0.9375rem;
+    padding:2rem;
+
   }
+
+
+
+
+
 
 
 .three_photos_container {
@@ -204,12 +213,9 @@ h2 {background-color: pink;
 
 }
 .luna_one, .luna_two {
-    width:10vw;
     place-self: center;
     border-radius: 10px;
     object-fit: contain;
-    max-width: 100%;
-    max-height: 100%;
 }
 
 .luna_one {
@@ -238,6 +244,18 @@ h2 {background-color: pink;
     max-width: 100%;
     max-height: 100%;
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 .carousel_part {
     background-color: yellow;
@@ -1066,36 +1084,26 @@ textarea {
     .logo {
         margin-left: 2.5rem;
     }
-    
-    .inside_welcome h2 {
-        font-size: 60px;
-    }
-    .inside_welcome {
-        margin-top:15%;
-    }
-    .inside_three_photos {
-        margin-top: 23%;
-        height:50vh;
-    }
     .square {
-        height: 75vh;
-      }
+        height: 70vh;
+    }
        
     .text p {
-        font-size: 40px;
-        padding-left: 20px;
-        padding-right: 20px;
+        font-size: 2.1875rem;
     }
-    .luna_one, .luna_two {
-        margin-top:3%;
-        width:20vw;
-        margin-left:20%;
-    }
+ 
 
-    .fenya_one{
-        margin-left:5%;
-        width:25vw;
-    }
+
+
+
+
+
+
+
+
+
+
+
     .pre_btn img,
     .nxt_btn img {
  
@@ -1246,9 +1254,7 @@ textarea {
         font-size:45px;
     }
    
-    footer {
-        font-size:35px;
-    }
+    
     
       
 }
@@ -1256,10 +1262,6 @@ textarea {
 @media all and (max-width:2559px) and (min-width:2000px) {
     .logo {
         margin-left: 2.5rem;
-    }
-
-    .inside_welcome h2 {
-        font-size: 50px;
     }
     .inside_welcome {
         margin-bottom:5%;
@@ -1673,9 +1675,6 @@ textarea {
 
 
 
-    .inside_welcome h2 {
-        font-size: 35px;
-    }
     .text p {
         font-size: 22px;
     }
@@ -1859,9 +1858,6 @@ textarea {
 
 
 
-    .inside_welcome h2 {
-        font-size: 28px;
-    }
     .inside_welcome {
         margin-top: 110px;
     }
@@ -2095,9 +2091,7 @@ textarea {
         width:60vw;
       
     }
-    .inside_welcome h2{
-        font-size:30px;
-    }
+    
     .text p {
         font-size: 23px;
         }
@@ -2307,9 +2301,7 @@ textarea {
         margin-top: 125px;
         width:60vw;
     }
-    .inside_welcome h2{
-        font-size:30px;
-    }
+    
   
 
     .text p {
@@ -2497,9 +2489,7 @@ textarea {
       margin-bottom:300px;
       background-color: yellow;
     }
-    .inside_welcome h2{
-        font-size:25px;
-    }
+    
     .inside_welcome {
         width:60vw;
         margin-top:130px;
@@ -2683,9 +2673,7 @@ textarea {
         width:58vw;
         margin-top:98px;
     }
-    .inside_welcome h2{
-        font-size:24px;
-    }
+
     .text p {
         font-size:17px;
     }
@@ -2916,9 +2904,7 @@ textarea {
         margin-top:5%;
         width:80vw;  
    }
-   .inside_welcome h2{
-    font-size:22px;
-}
+   
    .text p {
     font-size: 16px;
    }
@@ -3154,9 +3140,7 @@ footer {
         margin-top:5%;
         width:80vw;  
    }
-   .inside_welcome h2{
-    font-size:19px;
-}
+   
    .text p {
     font-size: 15px;
    }
@@ -3422,9 +3406,7 @@ footer {
         margin-top:5%;
         width:80vw;  
    }
-   .inside_welcome h2{
-    font-size:18px;
-}
+   
    .text p {
     font-size: 15px;
    }
@@ -3698,9 +3680,7 @@ footer {
         margin-top:5%;
         width:80vw;  
    }
-   .inside_welcome h2{
-    font-size:16px;
-}
+   
    .text p {
     font-size: 13px;
    }
@@ -3978,9 +3958,7 @@ footer {
         margin-top:5%;
         width:80vw;  
    }
-   .inside_welcome h2{
-    font-size:16px;
-}
+   
    .text p {
     font-size: 13px;
    }

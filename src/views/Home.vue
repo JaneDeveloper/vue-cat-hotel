@@ -32,13 +32,13 @@ import birthdayImg from '@/assets/images/birthday.jpg'
     </article>
     
     <article class="three_photos_container">
-    <div class="inside_three_photos">
-      <img class="fenya_one" :src="cat1" alt="Scottish straight" />
-      <img class="luna_one" :src="luna1" alt="Korat" />
-      <img class="luna_two" :src="luna2" alt="Korat" />
-    </div>
-    
-    <div class="square"></div>
+      <div class="inside_three_photos">
+        <img class="fenya_one" :src="cat1" alt="Scottish straight" />
+        <img class="luna_one" :src="luna1" alt="Korat" />
+        <img class="luna_two" :src="luna2" alt="Korat" />
+      </div>
+      
+      <div class="square"></div>
     </article>
   
     <article class="carousel_part">
