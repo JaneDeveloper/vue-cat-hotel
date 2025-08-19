@@ -176,15 +176,9 @@ h2 {
   .text {
     background-color: #DEDFE4;
     color:#282928;
-    padding:2rem;
+    padding:1rem;
 
   }
-
-
-
-
-
-
 
 .three_photos_container {
     grid-column-start:3;
@@ -208,15 +202,20 @@ h2 {
     color:#6c6f6d;
     z-index: 888;
     display:grid;
-    grid-template-columns: 50% 1% 49%;
-    grid-template-rows: 48% 4% 48%;
+    grid-template-columns: 1fr 0.05fr 1fr;
+    grid-template-rows: 1fr 0.1fr 1fr;
 
 }
 .luna_one, .luna_two {
     place-self: center;
     border-radius: 10px;
     object-fit: contain;
+    width: 80%; 
+    max-width: 90%;
+    height:auto;
+    margin:auto;
 }
+
 
 .luna_one {
     grid-column-start:3;
@@ -1263,31 +1262,20 @@ textarea {
     .logo {
         margin-left: 2.5rem;
     }
-    .inside_welcome {
-        margin-bottom:5%;
-        margin-top:5%;
+    .square {
+        height: 60vh;
     }
     .text p {
-        font-size: 36px;
+        font-size:30px;
     }
-    .luna_one, .luna_two {
-        margin-top:3%;
-        width:18vw;
-        margin-left:20%;
-    }
-    .inside_three_photos {
-        margin-top: 15%;
-        margin-bottom: 10%;
-        height:47vh;
-    }
+   
 
-    .fenya_one{
-        margin-left:5%;
-        width:22vw;
-    }
-    .square {
-        height: 80vh;
-      }
+
+
+
+
+
+
 
     .service_info {
         width: 100%;
@@ -1449,10 +1437,7 @@ textarea {
         margin-bottom:20%;
     }
 
-    footer {
-        font-size:25px;
-    }
-    
+
  
 } 
 
@@ -1469,33 +1454,18 @@ textarea {
     .nav_links a {
         font-size: 1.25rem;
     }
-
-
-
-
-    .inside_three_photos {
-        height: 55vh;
-        margin-top:30%;
-        margin-bottom:10%;
+    .square {
+        height: 50vh;
     }
-    .inside_welcome {
-        margin-bottom:10%;
-    }
- 
-    .luna_one, .luna_two {
-        margin-top: 5%;
-        width:20vw;
-        margin-left:18%;
-    }
-    .fenya_one {
-        width: 24vw;
-        margin-top:17%;
-    }
-    
- 
     .text {
         font-size: 30px;
     }
+
+
+
+
+
+
 
     .service_info {
         width: 100%;
@@ -1654,10 +1624,7 @@ textarea {
         font-size:28px;
     }
    
-    footer {
-        font-size:20px;
-    }
-    
+
 
 } 
 /*Responsive website for 1531 screen device.*/
@@ -1671,36 +1638,22 @@ textarea {
     .nav_links a {
         font-size: 1.125rem;
     }
-
-
-
-
     .text p {
-        font-size: 22px;
+        font-size: 20px;
     }
-    .inside_welcome {
-        margin-top:80px;
+    .square {
+        height: 40vh;
     }
-    .inside_three_photos {
-        height:50vh;
-        margin-bottom:300px;
-        margin-top:100px;
-        overflow: hidden;
-    }
-    .luna_one, .luna_two {
-        width:60%;
-        margin:5px;
-        margin-left:15%;
-        height:auto;
-    }
-    .fenya_one{
-        margin-top:25px;
-        width:100%;
-        height:auto;
-        }
-    .square{
-        height:800px;
-    }
+   
+
+
+
+
+
+
+
+
+
     .service_short_description {
         font-size: 20px;
         line-height: 1.3;
@@ -1828,10 +1781,7 @@ textarea {
         fieldset span{
             font-size:25px;
         }
-        
-    footer {
-        font-size:20px;
-        }
+
 
 
 } 
@@ -1852,42 +1802,20 @@ textarea {
     .big_text {
         font-size: 2.8125rem;
     }
-   
-
-
-
-
-
-    .inside_welcome {
-        margin-top: 110px;
+    .square {
+        height: 35vh;
     }
-    .inside_three_photos {
-        height:35vh;
-        margin-bottom:300px;
-        margin-top:100px;
-        overflow: hidden;
-    
-    }
-
-    .luna_one, .luna_two {
-        margin-left:15%;
-        width:80%;
-        margin-top:10px;
-        height:auto;
-    }
-    .fenya_one{
-        margin-top:85px;
-        width:25vw;
-        height:auto;
-        }
-    .square{
-        height:800px;
-    }
-  
     .text p {
         font-size: 22px;
         }
        
+
+
+
+
+
+
+
 
     .service_image {
         width:100%;
@@ -2038,10 +1966,7 @@ textarea {
         fieldset span{
             font-size:22px;
         }
-      
-        footer {
-            font-size:20px;
-        }
+
     
     } 
 
@@ -2061,43 +1986,19 @@ textarea {
     .big_text {
         font-size: 2.8125rem;
     }
-  
-
-
-
-
-    .luna_one, .luna_two {
-        display:none;
-    }
-    .fenya_one {
-        width: 100%;
-        height:auto;
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end:3;
-        margin:0;
-        margin-top:20px;
-    }
-    .inside_three_photos {
-        height:35vh;
-        margin-bottom:300px;
-        margin-top:100px;
-        overflow: hidden;
-    
-    }
-    .inside_welcome {
-        margin-top: 120px;
-        width:60vw;
-      
-    }
-    
     .text p {
         font-size: 23px;
         }
-    .main {
-        grid-template-columns: 70% 30%;
-    }
+    .square {
+            height: 35vh;
+        }
+ 
+
+
+
+
+
+
 
     .service_image {
         width:100%;
@@ -2247,9 +2148,7 @@ textarea {
         fieldset span{
             font-size:22px;
         }
-        footer {
-            font-size:18px;
-        }
+    
     
    
 } 
@@ -2268,45 +2167,19 @@ textarea {
     .big_text {
         font-size: 2.8125rem;
     }
-
-
-
-
-
-    .main {
-        grid-template-columns: 70% 30%;
-    }
-    .luna_one, .luna_two {
-        display:none;
-    }
-    .fenya_one {
-        width: 100%;
-        height:auto;
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end:3;
-        margin:0;
-        margin-top:20px; 
-    }
-    .inside_three_photos {
-        margin-bottom:300px;
-        margin-top:100px;
-        overflow:hidden;
-        height:32vh;
-        background-color:blue;
-    }
- 
-    .inside_welcome {
-        margin-top: 125px;
-        width:60vw;
-    }
-    
-  
-
+    .square {
+            height: 30vh;
+        }
     .text p {
         font-size: 19px;
         }
+
+
+
+
+
+
+
     
     .service_brand {
         font-size: 20px;
@@ -2459,10 +2332,7 @@ textarea {
         fieldset span{
             font-size:18px;
         }
-        footer {
-            font-size:13px;
-        }
-
+    
 } 
 
 
@@ -2472,34 +2342,30 @@ textarea {
     .luna_one, .luna_two {
         display:none;
     }
- 
+     .square {
+        height: 57vh;
+    }
     .fenya_one {
-        width: 100%;
-        height:auto;
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end:3;
-        margin:0;
-        margin-top:20px; 
+        grid-column-end:4;
+        width:70%;
+        align-self: end; 
+        justify-self: center; 
     }
-    .inside_three_photos {
-      height:30vh;
-      margin-top:100px;
-      margin-bottom:300px;
-      background-color: yellow;
-    }
+        
     
-    .inside_welcome {
+    .home_container {
+        grid-template-columns: 1fr 20px 1fr;
+        grid-template-rows:auto 20px auto;
+    }
+
+    .welcome_container {
         width:60vw;
-        margin-top:130px;
+      
     }
-    .text p {
-        font-size:18px;
-    }
-    .main {
-        grid-template-columns: 70% 30%;
-    }
+
+
+
+
 
 
     .service_short_description {
@@ -2653,47 +2519,43 @@ textarea {
         width:8vw;
         font-size:17px;
     }
-    footer {
-        font-size:12px;
-    } 
+
 }  
 
 
 
 /* Responsive website for 994 screen device */
 @media all and (max-width:994px) and (min-width:889px) {
-    
-    .main {
-        grid-template-columns: 70% 30%;
-    }
     .luna_one, .luna_two {
         display:none;
     }
-    .inside_welcome {
-        width:58vw;
-        margin-top:98px;
+     .square {
+        height: 57vh;
     }
-
-    .text p {
-        font-size:17px;
-    }
-
     .fenya_one {
-        width: 100%;
-        height:auto;
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end:3;
-        margin:0;
-        margin-top:20px; 
+        grid-column-end:4;
+        width:70%;
+        align-self: end; 
+        justify-self: center; 
     }
-    .inside_three_photos {
-      height:26vh;
-      margin-top:100px;
-      margin-bottom:300px;
-      background-color: purple;
+    .home_container {
+        grid-template-columns: 1fr 20px 1fr;
+        grid-template-rows:auto 20px auto;
     }
+    .welcome_container {
+        width:56vw;
+      
+    }
+
+
+
+
+
+
+
+    
+
+
 
     .service_short_description {
         font-size: 15px;
@@ -2852,9 +2714,6 @@ textarea {
         width:8vw;
         font-size:15px;
     }
-    footer {
-        font-size:12px;
-    }
 
 } 
 
@@ -2888,29 +2747,35 @@ textarea {
 
     header::after {
         width: 100%;
+    } 
+     .three_photos_container {
+        display:none;
     }
+     .square {
+        height: 57vh;
+    }
+    .fenya_one {
+        grid-column-end:4;
+        width:70%;
+        align-self: end; 
+        justify-self: center; 
+    }
+    .home_container {
+        grid-template-columns: 1fr;
+        grid-template-rows:auto 20px auto;
+    }
+    .welcome_container {
+        grid-column-start:1;
+        grid-column-end: 2;  
+        width: 90vw;
+    }
+
+
+
 
     
 
 
-
-
-
-    .main {
-        grid-template-columns: 100%;
-    }
-    .inside_welcome {
-        margin-bottom:5%;
-        margin-top:5%;
-        width:80vw;  
-   }
-   
-   .text p {
-    font-size: 16px;
-   }
-       .three_photos {
-        display:none;
-   }
 
 
    .service_short_description {
@@ -3075,9 +2940,7 @@ fieldset span{
 #btnSubmit, #clear {
     font-size:13px;
 }
-footer {
-    font-size:12px;
-}
+
   
 
 } 
@@ -3115,6 +2978,28 @@ footer {
     nav {
         grid-template-columns: 65% 20% 15%;
     }
+    .three_photos_container {
+        display:none;
+    }
+     .square {
+        height: 57vh;
+    }
+    .fenya_one {
+        grid-column-end:4;
+        width:70%;
+        align-self: end; 
+        justify-self: center; 
+    }
+    .home_container {
+        grid-template-columns: 1fr;
+        grid-template-rows:auto 20px auto;
+    }
+    .welcome_container {
+        grid-column-start:1;
+        grid-column-end: 2;  
+        width: 100%;
+    }
+
 
 
 
@@ -3131,22 +3016,7 @@ footer {
 
 
 
-    .main {
-        grid-template-columns: 100%;
-    }
-
-    .inside_welcome {
-        margin-bottom:5%;
-        margin-top:5%;
-        width:80vw;  
-   }
    
-   .text p {
-    font-size: 15px;
-   }
-    .three_photos {
-    display:none;
-   }
 
    .service_short_description {
     font-size: 15px;
@@ -3347,9 +3217,7 @@ fieldset span{
     width:15vw;
 }
 
-footer {
-    font-size:12px;
-}
+
   
 } 
 
@@ -3384,6 +3252,28 @@ footer {
     header::after {
         width: 100%;
     }
+    .three_photos_container {
+        display:none;
+    }
+     .square {
+        height: 57vh;
+    }
+    .fenya_one {
+        grid-column-end:4;
+        width:70%;
+        align-self: end; 
+        justify-self: center; 
+    }
+    .home_container {
+        grid-template-columns: 1fr;
+        grid-template-rows:auto 20px auto;
+    }
+    .welcome_container {
+        grid-column-start:1;
+        grid-column-end: 2;  
+        width: 100%;
+    }
+
 
 
 
@@ -3393,26 +3283,6 @@ footer {
 
 
 
-
-
-
-
-    .main {
-        grid-template-columns: 100%;
-    }
-
-    .inside_welcome {
-        margin-bottom:5%;
-        margin-top:5%;
-        width:80vw;  
-   }
-   
-   .text p {
-    font-size: 15px;
-   }
-    .three_photos {
-    display:none;
-   }
 
    .service_short_description {
     font-size: 15px;
@@ -3615,9 +3485,7 @@ fieldset span{
     font-size:13px;
     width:15vw;
 }
-footer {
-    font-size:12px;
-}
+
   
 } 
 
@@ -3655,6 +3523,28 @@ footer {
     nav {
         grid-template-columns: 65% 20% 15%;
     }
+    .three_photos_container {
+        display:none;
+    }
+     .square {
+        height: 57vh;
+    }
+    .fenya_one {
+        grid-column-end:4;
+        width:70%;
+        align-self: end; 
+        justify-self: center; 
+    }
+    .home_container {
+        grid-template-columns: 1fr;
+        grid-template-rows:auto 20px auto;
+    }
+    .welcome_container {
+        grid-column-start:1;
+        grid-column-end: 2;  
+        width: 100%;
+    }
+
 
    
 
@@ -3671,22 +3561,6 @@ footer {
 
 
 
-    .main {
-        grid-template-columns: 100%;
-    }
-
-    .inside_welcome {
-        margin-bottom:5%;
-        margin-top:5%;
-        width:80vw;  
-   }
-   
-   .text p {
-    font-size: 13px;
-   }
-    .three_photos {
-    display:none;
-   }
 
    .service_short_description {
     font-size: 13px;
@@ -3901,9 +3775,6 @@ fieldset span{
 }
 
 
-footer {
-    font-size:11px;
-}
 
 }  
 
@@ -3943,28 +3814,33 @@ footer {
     header::after {
         width: 100%;
     }
-
-
-
-
-
-
-    .main {
-        grid-template-columns: 100%;
+    .three_photos_container {
+        display:none;
+    }
+     .square {
+        height: 57vh;
+    }
+    .fenya_one {
+        grid-column-end:4;
+        width:70%;
+        align-self: end; 
+        justify-self: center; 
+    }
+    .home_container {
+        grid-template-columns: 1fr;
+        grid-template-rows:auto 20px auto;
+    }
+    .welcome_container {
+        grid-column-start:1;
+        grid-column-end: 2;  
+        width: 100%;
     }
 
-    .inside_welcome {
-        margin-bottom:5%;
-        margin-top:5%;
-        width:80vw;  
-   }
-   
-   .text p {
-    font-size: 13px;
-   }
-    .three_photos {
-    display:none;
-   }
+
+
+
+
+
 
    .service_short_description {
     font-size: 13px;
@@ -4176,9 +4052,6 @@ fieldset span{
 }
 .date-picker label {
     margin-left: 0;
-}
-footer {
-    font-size:11px;
 }
   
 } 
