@@ -20,14 +20,14 @@ import birthdayImg from '@/assets/images/birthday.jpg'
     <article class="welcome_container">
       <h2>Welcome to Our Grand Mew Hotel</h2>
       <div class="text">
-        <p> Dear guests, we are glad to see you on our website.</p>
-        <p> If you love travelling so much as you love the little members of your family,
-            but you can’t find a good and reliable cat<br>
-            sitter, our hotel is a great solution to this problem.</p>
-        <p> We love these mystical animals with all our heart and create the comfortable, safe and friendly atmosphere for them.</p>
-        <p> All our fluffy guests, who stayed at our hotel at least once, want to return again and again.</p>
-        <p> At our hotel they will not only have a great time but find a lot of good friends.</p>
-        <p> After your vacation NOT ONLY YOU will have a lot of things to tell, but your cat as well!</p>
+        <p> Dear guests, we are glad to see you on our website.
+            If you love travelling so much as you love the little members of your family,
+            but you can’t find a good and reliable cat
+            sitter, our hotel is a great solution to this problem.
+            We love these mystical animals with all our heart and create the comfortable, safe and friendly atmosphere for them.
+            All our fluffy guests, who stayed at our hotel at least once, want to return again and again.
+            At our hotel they will not only have a great time but find a lot of good friends.
+            After your vacation NOT ONLY YOU will have a lot of things to tell, but your cat as well! </p>
       </div>
     </article>
     
@@ -38,7 +38,7 @@ import birthdayImg from '@/assets/images/birthday.jpg'
         <img class="luna_two" :src="luna2" alt="Korat" />
       </div>
       
-      <div class="square"></div>
+     <!-- <div class="square"></div> -->
     </article>
   
     <article class="carousel_part">

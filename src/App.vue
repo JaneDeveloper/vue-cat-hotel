@@ -10,7 +10,7 @@ import hotelLogo from '@/assets/images/hotel_logo.png'
 
   <div class="container">
     <header>
-      <nav >
+      <nav>
         <h1 class="logo"><img class="logo_cat" :src="hotelLogo" alt="Cat Logo"></h1>
         <label class="hamburger_menu">
           <input type="checkbox" v-model="menuOpen">
