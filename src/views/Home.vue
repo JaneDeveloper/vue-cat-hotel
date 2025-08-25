@@ -38,7 +38,7 @@ import birthdayImg from '@/assets/images/birthday.jpg'
         <img class="luna_two" :src="luna2" alt="Korat" />
       </div>
       
-     <!-- <div class="square"></div> -->
+     <div class="square"></div> 
     </article>
   
     <article class="carousel_part">
