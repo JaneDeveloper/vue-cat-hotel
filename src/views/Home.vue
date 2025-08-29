@@ -42,10 +42,13 @@ import birthdayImg from '@/assets/images/birthday.jpg'
     </article>
   
     <article class="carousel_part">
-      <h2>Our Services</h2>
+      <h2 >Our Services</h2>
       <button class="pre_btn"><img :src="beforeImg" alt="" height="50" width="auto" /></button>
       <button class="nxt_btn"><img :src="afterImg" alt="" height="50" width="auto" /></button>
       <section class="service_container">
+        <div class="carousel_track">
+          
+          
         <article class="service_card">
           <div class="service_image"><img :src="vaccinationImg" class="service_thumb" alt="Vaccination Service" /></div>
           <div class="service_info">
@@ -107,9 +110,15 @@ import birthdayImg from '@/assets/images/birthday.jpg'
           </div>
         </article>
 
+
+
+
+        
+      </div>
       </section>
     
     </article>
+
 
 </section>
   
