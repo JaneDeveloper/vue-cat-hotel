@@ -2521,17 +2521,17 @@ textarea {
 
 
     .carousel_track {
-        width: calc(1 * 65vw + 30px); 
+        width: calc(1 * 79vw + 30px); 
         margin: 0 auto;
       }
     
       .service_card {
-        flex: 0 0 65vw; 
+        flex: 0 0 79vw; 
       }
     
    
       .service_thumb {
-        width:65vw;
+        width:79vw;
         }
 
 
@@ -2732,22 +2732,18 @@ textarea {
 
 
     .carousel_track {
-        width: calc(1 * 65vw + 30px); 
+        width: calc(1 * 82vw + 30px); 
         margin: 0 auto;
       }
     
       .service_card {
-        flex: 0 0 65vw; 
+        flex: 0 0 82vw; 
       }
     
    
       .service_thumb {
-        width:65vw;
+        width:82vw;
         }
-
-
- 
-
 
 
 
@@ -2966,30 +2962,38 @@ fieldset span{
 
 
     .carousel_track {
-        width: calc(1 * 70vw); 
+        width: 70vw; 
         margin: 0 auto;
       }
     
       .service_card {
-        flex: 0 0 70vw; 
+        flex: 0 0 70vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            background-color: grey;
+        
       }
     
    
       .service_thumb {
-        width:70vw;
-        height:auto;
-        }
+            width: 100%;
+            aspect-ratio: 4 / 3; /* Keeps image consistent */
+            object-fit: cover;
+            padding: 0; /* Remove padding from image itself */
+          }
+        
 
 
         .service_container {
             width:76vw;
           }
+          .service_image {
+            padding: 15px;
+          }
+     
         
-        
-        
-
-
-      
+         
 
 
 
@@ -3237,26 +3241,39 @@ fieldset span{
         width: 100%;
     }
     
+    
+
     .carousel_track {
-        width: calc(1 * 70vw); 
+        width: 70vw; 
         margin: 0 auto;
       }
     
       .service_card {
-        flex: 0 0 70vw; 
+        flex: 0 0 70vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            background-color: grey;
+        
       }
     
    
       .service_thumb {
-        width:70vw;
-        height:auto;
-        }
+            width: 100%;
+            aspect-ratio: 4 / 3; /* Keeps image consistent */
+            object-fit: cover;
+            padding: 0; /* Remove padding from image itself */
+          }
+        
 
 
         .service_container {
             width:76vw;
           }
-        
+          .service_image {
+            padding: 15px;
+          }
+     
 
 
 
