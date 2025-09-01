@@ -171,7 +171,7 @@ nav a {
 }
 
 h2 {
-    background-color: pink;
+    background-color: green;
     font-weight: 800;
     grid-column-start:1;
     grid-column-end: 2;
@@ -198,8 +198,8 @@ h2 {
       .text p {
        background-color: #34c5ef;
        line-height: 1.7;
-       margin-left:30px;
-       margin-right:30px;
+       margin-left:1.875rem;
+       margin-right:1.875rem;
 
       }     
 
@@ -278,19 +278,6 @@ h2 {
         grid-row-start: 1;
         grid-row-end: 4;
       }
-
-
-
-
-
-
-
-
-
-
-
-
-
 .carousel_part {
     grid-column-start:1;
     grid-column-end: 4;
@@ -385,12 +372,12 @@ h2 {
 .service_thumb {
     width:24vw;
     height: 24vh;
-    padding:15px;
+    padding:0.9375rem;
     object-fit: cover;
     }
 .service_info {
     width: 100%;
-    padding:15px;
+    padding:0.9375rem;
   
    
     }
@@ -401,7 +388,7 @@ h2 {
     color:white;
     font-size: clamp(0.75rem, 1.2vw + 0.4rem, 1.64rem);
     margin:0;
-    margin-bottom:10px;
+    margin-bottom:0.625rem;
 
   
 
@@ -473,6 +460,7 @@ h2 {
 
     
 /* AboutUs page starts here. */
+
 .aboutUs_container {
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -481,34 +469,31 @@ h2 {
 .photo_hotel {
     grid-column-start:1;
     grid-column-end:2;
-    grid-row-start:1;
-    grid-row-end:2;
-   /* display:grid;
-    grid-template-columns: 100%;
-    background-color: #DEDFE4; */
-    
+    background-color: green;
 }
+
 .photo_hotel img {
-    width: 90%;
-    margin-bottom: 20%; 
+    width: 70%;
     display: block;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     position: relative;
-   /* left:-730px; */
-    margin-top:33%;
+    margin: 0 auto;
+    margin-top: 5.860375rem;
+    /* left:-730px; */
 }
 .about_hotel_text {
-    background: grey;
+    grid-column-start:2;
+    grid-column-end:3;
+    justify-self: center;
+    align-self: center;
+    background: lightblue;
     width:50vw;
     height:auto;
     position: relative;
-    margin-top:5%;
-    padding: 5px;
     z-index:1;
    /* right:-1550px; */
-    margin-bottom:5%;
-    border-radius: 10px;
 } 
+
 .photo_hotel, .about_hotel_text {
     grid-row: 1/2;
 }
@@ -516,48 +501,50 @@ h2 {
 	display: none;
  
 } */
-.about_hotel_text h2 {
-    padding-top: 15px;
-    padding-left: 23px;
-    font-size: 30px;
-    text-transform:capitalize;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:#282928;
-    margin-top:10px;
-    color:white;
-    text-shadow: 4px 4px 4px #000000;
-    opacity: 0.7;
-}
-
+ 
 .info_hotel, #hidden_text {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     align-self:center;
-    padding: 15px;
+    padding: 0.9375rem;
     height:auto;
-    font-size: 20px;
-    line-height: 1.5rem;
-    opacity:0.7;
-    color:white;
-    margin:15px;
+    font-size: clamp(1rem, 1vw, 1.375rem);
+    line-height: 1.7;
+    margin:0.9375rem;
 }
 .info_hotel {
-    border-right:4px groove white;
-    border-left:4px groove white;
-    
+    border-left: 4px solid #585a59;
+    border-right: 4px solid #585a59;
 }
 #hidden_text {
-    border-top:4px groove white;
-    border-bottom:4px groove white;
+    border-top: 4px solid #585a59;
+    border-bottom: 4px solid #585a59;
+
 }
 .about_hotel_text a {
-    margin:20px;
-    font-size:20px;
+    margin:1.25rem;
+    font-size: clamp(1rem, 1vw, 1.375rem); 
     color:black;
     text-decoration: none;
 }
 .info_hotel p {
     height:auto;
 }  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Staff page starts here */
 
 
@@ -565,142 +552,141 @@ h2 {
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows:auto; 
-    background-color: light blue;
+    background-color: lightblue;
 }
 
 .staff_carousel {
     width: 50vw;
-    height:70vh;
-    margin-top:10%;
-    margin-bottom:15%;
+    height:55vh;
+    margin:20px auto;
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
     grid-column-start:1;
-    grid-column-end:3;
-    border-radius:10px;
-}
-.slide {
-    position:absolute;
-    inset: 0;
-    opacity: 0;
-    border: 1px solid black;
-    width: 50vw;
-    background-color: #A9A9A9;
+    grid-column-end:2;
     display:grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 10% 60% 30%;
-    border:none;
-    border-radius:10px;
+    grid-template-columns: 5vw 1fr 5vw;
+    grid-template-rows:40px auto 40px; 
+    background-color:yellow;
+
+  
+}
+.carousel-button.prev {
+    grid-column-start:1;
+    grid-column-end:2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color:green;
+ }
+
+
+.carousel-button.next {
+    grid-column-start:3;
+    grid-column-end:4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: green;
+ }
+
+ .card_list {
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start:2 ;
+    grid-row-end: 3;
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows:auto;
+    background-color: lightcoral;
+
+ }
+
+.slide {
+   
+
+    opacity: 0;
+    background-color: #A9A9A9;
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display:grid;
+    grid-template-columns:auto 30px auto;
+    grid-template-rows:auto 10px 1fr 20px auto;
 }
                             
 .slide[data-active] {
     opacity: 1;
 }
+.staff_name {
+    background-color: green;
+    text-transform: uppercase;
+    grid-column-start: 1;
+    grid-column-end:4;
+    grid-row-start: 1;
+    grid-row-end:2;
+    font-size: clamp(0.75rem, 1.2vw + 0.4rem, 1.64rem);
+
+} 
+.quatation  {
+margin:0;
+background-color: purple;
+text-transform: uppercase;
+grid-column-start: 1;
+grid-column-end:2;
+grid-row-start: 3;
+grid-row-end:4;
+font-size: clamp(1rem, 1vw, 1.375rem);
+line-height: 1.7;
+} 
+
+.staff_image {
+    grid-column-start: 3;
+    grid-column-end:4;
+    grid-row-start: 3;
+    grid-row-end:4;
+    display:flex;
+    background-color: red;;
+ }
+ .staff_image img {
+    margin: auto;
+    width:100%;
+    height:auto; 
+ }
+
+ .staff_short_description {
+    grid-column-start: 1;
+    grid-column-end:4;
+    grid-row-start: 5;
+    grid-row-end:6;
+    font-size: clamp(1rem, 1vw, 1.375rem);
+    line-height: 1.7;
+
+    background-color: lightblue;
+    
+}
+
+
+
+
 .staff_carousel > .card_list {
     margin: 0;
     padding: 0;
 
 }
 .carousel-button {
-    position:absolute;
-    background:none;
-    border: none;
-    font-size:2rem;
-    top:50%;
-    z-index:2;
-    transform: translateY(-50%);
-    color: rgba(255, 255, 255, .5);
-    cursor:pointer;
-    border-radius: .25rem;
-    padding: 0 .5rem;
-    background-color: rgba(0,0,0.1);
+ 
+    font-size: 4.5rem;
+
+ 
 
 }
-.carousel-button:hover, 
-.carousel-button:focus {
-    color:white;
-    background-color:rgba(0,0,0, .2);
-
-}
-.carousel-button:focus {
-    outline:1px solid black;
-}
-.carousel-button.prev {
-    left: 1rem;
-}
-.carousel-button.next {
-    right: 1rem;
-}
-
-.staff_name {
-    background-color:#808080;
-    text-shadow: 4px 8px 4px #000000;
-    text-transform: uppercase;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:white;
-    padding: 20px;
-    grid-column-start: 1;
-    grid-column-end:3;
-    grid-row-start: 1;
-    grid-row-end:2;
-    opacity:0.7;
-    border-top-left-radius:10px;
-    border-top-right-radius:10px;
-  
-} 
-
-.quatation  {
-    color:white;
-    line-height: 1.5;
-    padding: 20px;
-    margin:5%;
-    border:2px solid #333;
-    text-transform: uppercase;
-    grid-column-start: 1;
-    grid-column-end:2;
-    grid-row-start: 2;
-    grid-row-end:3;
-    box-shadow: 0 20px 30px rgba(0,0,0,0.5);
-    border-radius:10px;
-    opacity:0.9;
-    border:none;
 
 
-} 
-.staff_short_description {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    line-height: 1.5;
-    color:white;
-    margin:2%;
-    margin-top:4%;
-    opacity:0.7;
-    padding: 20px;
-    grid-column-start: 1;
-    grid-column-end:3;
-    grid-row-start: 3;
-    grid-row-end:4;
-    
-}
 
-.staff_image {
-   position:absolute;
-   margin:5%;
-   margin-left:10%;
-   grid-column-start: 2;
-   grid-column-end:3;
-   grid-row-start: 2;
-   grid-row-end:3;
 
-   
-}
-.staff_thumb {
-    width: 80%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 20px 30px rgba(0,0,0,0.5);
 
-} 
+
+
+
+
 
 
 
@@ -1231,56 +1217,10 @@ textarea {
 
         
     
-    
-    .info_hotel p {
-        font-size:45px;
-        line-height: 1.5;
-        height:auto;
-    }
-    .info_hotel {
-        margin-top:3%;
-    }
-    #hidden_text{
-        font-size:45px;
-        line-height: 1.5;
-    }
-    /*.about_hotel_text h2 {
-        font-size: 60px;
-        padding:25px;
-    } */
-    .about_hotel_text a {
-        font-size:45px;
-    }
-    #for_anchor1, #for_anchor2 {
-        margin-top: 3%;
-    }
  
-    .staff_short_description {
-        font-size: 45px;
-    }
-    .carousel-button {
-        font-size:4rem;
-        padding: 0 .7rem;
-    
-    }
-    .quatation {
-        font-size: 45px;
-        height:15vh;
-    }
 
-    .staff_name {
-        font-size: 60px;
-    }
-    .slide, .staff_carousel {
-        width: 70vw;
-    }
-    .staff_image {
-        width:85%;
-      
-    }
-    .staff_carousel {
-        margin-bottom:33%;
-    }
+
+
 
     td {
         font-size: 38px;
@@ -1357,63 +1297,10 @@ textarea {
 
 
 
-    .info_hotel p {
-        font-size:33px;
-        line-height: 1.5;
-        height:auto;
-    }
-    #hidden_text{
-        font-size:33px;
-        line-height: 1.5;
-    }
-    .about_hotel_text h2 {
-        font-size: 40px;
-        padding:25px;
-        margin-top: 2%;
-    }
-    .about_hotel_text a {
-        margin:20px;
-        font-size:35px;
-        margin-top:3%;
-        margin-bottom:3%;
-    }
-    .about_hotel_text {
-        margin-top:10%;
-        margin-bottom:25%;
-    }
-    .photo_hotel img {
-        margin-top:40%;
-    }
-
-    .slide, .staff_carousel {
-        width: 70vw;
-    }
-    .staff_carousel {
-        margin-top: 10%;
-        margin-bottom: 40%;
-    }
-    .staff_short_description {
-        font-size: 38px;
-        margin:1%;
-    }
-    .carousel-button {
-        font-size:4rem;
-        padding: 0 .7rem;
-    
-    }
   
-    .quatation {
-        font-size: 40px;
-        height:13vh;
-    }
 
-    .staff_name {
-        font-size: 50px;
-    }
-    .staff_image {
-        width:75%;
-    }
 
+   
     td {
         font-size: 35px;
         line-height:1.3;
@@ -1534,35 +1421,6 @@ textarea {
 
 
 
-
-    .info_hotel p {
-        font-size:28px;
-        line-height: 1.3;
-        height:auto;
-    }
-
-    #hidden_text{
-        font-size:28px;
-        line-height: 1.3;
-    }
-    .about_hotel_text h2 {
-        font-size: 33px;
-        padding:10px;
-
-    }
-    .about_hotel_text a {
-        margin:25px;
-        font-size:28px;
-        margin-top:3%;
-        margin-bottom:3%;
-    }
-    .about_hotel_text {
-        margin-bottom:40%;
-        margin-top:10%;
-    }
-    .photo_hotel img {
-        margin-top:30%;
-    }
 
     .staff_short_description { 
         font-size: 28px;
@@ -1702,36 +1560,6 @@ textarea {
 
 
 
-        .info_hotel p {
-            font-size:20px;
-            line-height: 1.3;
-        }
-        .info_hotel {
-            margin-top:20px;
-        }
-    
-        #hidden_text{
-            font-size:20px;
-            line-height: 1.3;
-        }
-        .about_hotel_text h2 {
-            font-size: 22px;
-            padding:10px;
-            margin-top: 1%;
-        }
-        .about_hotel_text a {
-            margin:20px;
-            font-size:22px;
-            margin-top:3%;
-            margin-bottom:3%;
-        }
-        .about_hotel_text {
-            margin-bottom:35%;
-            margin-top:13%;
-        }
-        .photo_hotel img {
-            margin-top:35%;
-        }
         .staff_short_description {
             font-size: 25px;
             margin:1%;
@@ -1864,36 +1692,8 @@ textarea {
    
     
 
-        .info_hotel p {
-            font-size:20px;
-            line-height: 1.3;
-        }
-        .info_hotel {
-            margin-top:15px;
-        }
-    
-        #hidden_text{
-            font-size:20px;
-            line-height: 1.3;
-        }
-        .about_hotel_text h2 {
-            font-size: 22px;
-            padding:10px;
-            margin-top: 1%;
-        }
-        .about_hotel_text a {
-            margin:10px;
-            font-size:22px;
-            margin-top:3%;
-            margin-bottom:3%;
-        }
-        .about_hotel_text {
-            margin-bottom:30%;
-            margin-top:10%;
-        }
-        .photo_hotel img {
-            margin-top:30%;
-        }
+      
+        
         .staff_short_description {
             font-size: 23px;
             margin:1%;
@@ -2032,38 +1832,8 @@ textarea {
 
    
 
-        .info_hotel p {
-            font-size:23px;
-            line-height: 1.3;
-        }
-        .info_hotel {
-            margin-top:15px;
-        }
+        
     
-        #hidden_text{
-            font-size:23px;
-            line-height: 1.3;
-        }
-        .about_hotel_text h2 {
-            font-size: 22px;
-            padding:10px;
-            margin-top: 2%;
-        }
-        .about_hotel_text a {
-            margin:10px;
-            font-size:22px;
-            margin-top:3%;
-            margin-bottom:3%;
-        }
-        .about_hotel_text {
-            margin-top:10%;
-            margin-bottom:25%;
-        }
-     
-        .photo_hotel img {
-            margin-top:30%;
-            width:80%;
-        }
         .staff_short_description {
             font-size: 23px;
             padding:10px;
@@ -2202,40 +1972,8 @@ textarea {
 
     
     
-        .info_hotel p {
-            font-size:18px;
-            line-height: 1.3;
-        }
-        .info_hotel {
-            margin-top:15px;
-        }
-    
-        #hidden_text{
-            font-size:18px;
-            line-height: 1.3;
-        }
-        .about_hotel_text h2 {
-            font-size: 20px;
-            padding:10px;
-            margin-top: 1%;
-        }
-        .about_hotel_text a {
-            margin:10px;
-            font-size:20px;
-            margin-top:3%;
-            margin-bottom:3%;
-        }
-        .about_hotel_text {
-            margin-top:10%;
-            margin-bottom:25%;
-        }
-        #for_anchor1, #for_anchor2 {
-            margin-top: 4%;
-        }
-        .photo_hotel img {
-            margin-top:27%;
-            width:65%;
-        }
+       
+        
         .staff_short_description {
             font-size: 18px;
             margin:2%;
@@ -2375,37 +2113,7 @@ textarea {
 
 
 
-    .info_hotel p {
-        font-size:17px;
-        line-height: 1.3;
-    }
-    .info_hotel {
-        margin-top:15px;
-    }
-
-    #hidden_text{
-        font-size:18px;
-        line-height: 1.3;
-    }
-    .about_hotel_text h2 {
-        font-size: 20px;
-        padding:10px;
-        margin-top: 1%;
-    }
-    .about_hotel_text {
-        margin-top:10%;
-        margin-bottom:25%;
-    }
-    .about_hotel_text a {
-        margin:10px;
-        font-size:19px;
-        margin-top:3%;
-        margin-bottom:3%;
-    }
-    .photo_hotel img {
-        margin-top:30%;
-        width:65%;
-    }
+    
     .staff_short_description {
         font-size: 17px;
     }
@@ -2544,39 +2252,7 @@ textarea {
 
 
 
-    .info_hotel p {
-        font-size:15px;
-        line-height: 1.3;
-    }
-    .info_hotel {
-        margin:10px;
-        
-    }
-
-    #hidden_text{
-        font-size:15px;
-        line-height: 1.3;
-        margin:10px;
-    }
-    .about_hotel_text h2 {
-        font-size: 18px;
-        padding:10px;
-        margin-top: 1%;
-    }
-    .about_hotel_text {
-        margin-top:10%;
-        margin-bottom:25%;
-    }
-    .about_hotel_text a {
-        margin:10px;
-        font-size:18px;
-        margin-top:3%;
-        margin-bottom:3%;
-    }
-    .photo_hotel img {
-        margin-top:30%;
-        width:65%;
-    }
+    
     .staff_short_description {
         font-size: 17px;
         margin-bottom:5%;
@@ -2745,54 +2421,26 @@ textarea {
         width:82vw;
         }
 
-
-
-    
-
-
-
-
-  
-
-
-
-
-
-
-.info_hotel p {
-    font-size:15px;
-    line-height: 1.3;
-}
-.info_hotel {
-    margin:13px;
-    
-}
-
-#hidden_text{
-    font-size:15px;
-    margin:13px;
-    line-height: 1.3;
-}
-.about_hotel_text h2 {
-    font-size: 18px;
-    padding:10px;
-    margin-top: 1%;
-}
-.about_hotel_text {
-    margin-top:10%;
-    margin-bottom:25%;
-    width:75vw;
-    right:-800px;
-}
-.about_hotel_text a {
-    margin:10px;
-    font-size:18px;
-    margin-top:3%;
-    margin-bottom:3%;
-}
+        
+        .about_hotel_text {
+            grid-column-start:1;
+            grid-column-end:3;
+            justify-self: center;
+            align-self: center;
+            width:85vw;
+        }
 .photo_hotel {
     display:none; 
 }
+
+
+
+
+
+
+
+
+
 .staff_short_description {
     font-size: 17px;
     padding:5px;
@@ -2995,58 +2643,22 @@ fieldset span{
         
          
 
-
-
-
-
- 
-
-
-    
-
-
-
-
-
-
-
-
    
-
-.info_hotel p {
-    font-size:15px;
-    line-height: 1.3;
-}
-.info_hotel {
-    margin:13px;
-    
-}
-
-#hidden_text{
-    font-size:15px;
-    margin:13px;
-    line-height: 1.3;
-}
-.about_hotel_text h2 {
-    font-size: 18px;
-    padding:10px;
-    margin-top: 1%;
-}
-.about_hotel_text {
-    margin-top:10%;
-    margin-bottom:25%;
-    width:85vw;
-    right:-800px;
-}
-.about_hotel_text a {
-    margin:10px;
-    font-size:18px;
-    margin-top:3%;
-    margin-bottom:3%;
-}
+          .about_hotel_text {
+            grid-column-start:1;
+            grid-column-end:3;
+            justify-self: center;
+            align-self: center;
+            width:100vw;
+        }
 .photo_hotel {
     display:none; 
 }
+
+
+
+
+
 .staff_short_description {
     margin-top: 30%;
     font-size: 15px;
@@ -3196,6 +2808,7 @@ fieldset span{
         --bar-width: 30px;
         --bar-height: 2px;
     }
+
     .logo {
         place-self:auto;
         margin-left:1.25rem;
@@ -3221,6 +2834,7 @@ fieldset span{
     header::after {
         width: 100%;
     }
+    
     .three_photos_container {
         display:none;
     }
@@ -3278,6 +2892,17 @@ fieldset span{
 
 
 
+          .about_hotel_text {
+            grid-column-start:1;
+            grid-column-end:3;
+            justify-self: center;
+            align-self: center;
+            width:100vw;
+        }
+.photo_hotel {
+    display:none; 
+}
+
 
 
  
@@ -3286,40 +2911,7 @@ fieldset span{
 
 
 
-.info_hotel p {
-    font-size:15px;
-    line-height: 1.3;
-}
-.info_hotel {
-    margin:13px;
-    
-}
 
-#hidden_text{
-    font-size:15px;
-    margin:13px;
-    line-height: 1.3;
-}
-.about_hotel_text h2 {
-    font-size: 18px;
-    padding:10px;
-    margin-top: 1%;
-}
-.about_hotel_text {
-    margin-top:10%;
-    margin-bottom:25%;
-    width:85vw;
-    right:-800px;
-}
-.about_hotel_text a {
-    margin:10px;
-    font-size:18px;
-    margin-top:3%;
-    margin-bottom:3%;
-}
-.photo_hotel {
-    display:none; 
-}
 .staff_short_description {
     margin-top: 35%;
     font-size: 15px;
@@ -3469,6 +3061,7 @@ fieldset span{
 /* Responsive website for 430 screen device */
 
 @media all and (max-width:430px) and (min-width:324px) {
+
     :root {
         --bar-width: 28px;
         --bar-height: 2px;
@@ -3487,6 +3080,7 @@ fieldset span{
     header::after {
         width: 100%;
     }
+ 
     
     .logo {
         place-self:auto;
@@ -3542,57 +3136,19 @@ fieldset span{
           }
         
 
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
- 
-.info_hotel p {
-    font-size:13px;
-    line-height: 1.3;
-}
-.info_hotel {
-    margin:5px;
-    
-}
-
-#hidden_text{
-    font-size:13px;
-    margin:5px;
-    line-height: 1.3;
-}
-.about_hotel_text h2 {
-    font-size: 15px;
-    padding:7px;
-    margin-top: 1%;
-}
-.about_hotel_text {
-    margin-top:10%;
-    margin-bottom:25%;
-    width:85vw;
-    right:-800px;
-}
-.about_hotel_text a {
-    margin:10px;
-    font-size:16px;
-    margin-top:3%;
-    margin-bottom:3%;
-}
+ .about_hotel_text {
+            grid-column-start:1;
+            grid-column-end:3;
+            justify-self: center;
+            align-self: center;
+            width:100vw;
+        }
 .photo_hotel {
     display:none; 
 }
+
+
+
 .staff_short_description {
     margin-top: 35%;
     font-size: 15px;
@@ -3830,59 +3386,26 @@ fieldset span{
 
 
 
-
-
-
-
-
-
-
-
-
-
-      
-
-
-
-
-
-
-
-   
-.info_hotel p {
-    font-size:13px;
-    line-height: 1.3;
-}
-.info_hotel {
-    margin:5px;
-    
-}
-
-#hidden_text{
-    font-size:13px;
-    margin:5px;
-    line-height: 1.3;
-}
-.about_hotel_text h2 {
-    font-size: 15px;
-    padding:7px;
-    margin-top: 1%;
-}
-.about_hotel_text {
-    margin-top:10%;
-    margin-bottom:25%;
-    width:85vw;
-    right:-800px;
-}
-.about_hotel_text a {
-    margin:10px;
-    font-size:16px;
-    margin-top:3%;
-    margin-bottom:3%;
-}
+          .about_hotel_text {
+            grid-column-start:1;
+            grid-column-end:3;
+            justify-self: center;
+            align-self: center;
+            width:100vw;
+        }
 .photo_hotel {
     display:none; 
 }
+
+
+
+
+
+
+
+
+
+
 .staff_short_description {
     margin-top: 35%;
     font-size: 14px;
