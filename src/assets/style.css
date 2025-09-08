@@ -562,12 +562,12 @@ h2 {
 .staff_carousel {
     width: clamp(300px, 80vw, 1000px);
     
-        margin:20px auto;
+        margin:0 auto;
     position: relative;
     grid-column-start:1;
     grid-column-end:2;
     display:grid;
-    grid-template-columns: minmax(40px, 5vw) 1fr minmax(40px, 5vw);
+grid-template-columns: auto 1fr auto;
     grid-template-rows:40px auto 40px; 
     background-color:pink;
 
@@ -615,7 +615,7 @@ h2 {
     grid-row-end: 2;
     display:grid;
     grid-template-columns:auto 30px auto;
-    grid-template-rows:auto 10px 1fr 20px auto;
+    grid-template-rows:auto 0.5fr auto;
 }
                             
 .slide[data-active] {
@@ -624,7 +624,8 @@ h2 {
 .staff_name {
     background-color: green;
     text-transform: uppercase;
-    padding:15px;
+    padding:10px;
+    margin:0;
 
     grid-column-start: 1;
     grid-column-end:4;
@@ -635,13 +636,13 @@ h2 {
 } 
 .quatation  {
 margin:0;
-padding:15px;
+padding:10px;
 background-color: purple;
 text-transform: uppercase;
 grid-column-start: 1;
 grid-column-end:2;
-grid-row-start: 3;
-grid-row-end:4;
+grid-row-start: 2;
+grid-row-end:3;
 font-size: clamp(1rem, 1vw, 1.375rem);
 line-height: 1.7;
 } 
@@ -649,8 +650,8 @@ line-height: 1.7;
 .staff_image {
     grid-column-start: 3;
     grid-column-end:4;
-    grid-row-start: 3;
-    grid-row-end:4;
+    grid-row-start: 2;
+    grid-row-end:3;
     display:flex;
     background-color: red;
     align-self: flex-start;
@@ -668,11 +669,11 @@ line-height: 1.7;
  .staff_short_description {
     grid-column-start: 1;
     grid-column-end:4;
-    grid-row-start: 5;
-    grid-row-end:6;
+    grid-row-start: 3;
+    grid-row-end:4;
     font-size: clamp(1rem, 1vw, 1.375rem);
     line-height: 1.7;
-    padding:15px;
+    padding:10px;
 
     background-color: lightblue;
     
@@ -687,7 +688,7 @@ line-height: 1.7;
 
 }
 .carousel-button {
-    font-size: clamp(2rem, 1.5vw + 1rem, 4.5rem);
+    font-size: clamp(1rem, 1.5vw + 1rem, 4.5rem);
     justify-self: center; 
 
  
@@ -2272,34 +2273,35 @@ textarea {
 
 
 
-.staff_carousel { width: 100%;
-}
 
 .staff_image {
     grid-column-start: 1;
     grid-column-end:4;
-    justify-self: center;
+    justify-self: end;
+    justify-content: flex-end; 
 
  }
  .staff_image img {
     width:45%;
     height:auto;
     padding:0;
+    margin: 0;
 
  }
 
 .slide {
-    grid-template-rows:auto 10px auto 0.5fr 20px auto;
+    grid-template-rows:auto 0.5fr 0.5fr auto;
 }
 .quatation {
-    grid-row-start: 4;
-    grid-row-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
     grid-column-start: 1;
     grid-column-end:4;
+    font-size: 0.875rem;
 }
 .staff_short_description {
-    grid-row-start: 6;
-    grid-row-end: 7;
+    grid-row-start: 4;
+    grid-row-end: 5;
     grid-column-start: 1;
     grid-column-end:4;
     margin:0;
@@ -2490,7 +2492,7 @@ fieldset span{
           }
      
         
-         
+          
 
    
           .about_hotel_text {
@@ -2510,33 +2512,38 @@ fieldset span{
 .staff_image {
     grid-column-start: 1;
     grid-column-end:4;
-    justify-self: center;
-
+    justify-self: end;
+    justify-content: flex-end; 
  }
  .staff_image img {
     width:45%;
     height:auto;
     padding:0;
+    margin: 0;
 
  }
 
-.slide {
-    grid-template-rows:auto 10px auto 0.5fr 20px auto;
+
+
+
+ .slide {
+    grid-template-rows:auto 0.5fr 0.5fr auto;
 }
 .quatation {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end:4;
+    font-size: 0.875rem;
+
+}
+.staff_short_description {
     grid-row-start: 4;
     grid-row-end: 5;
     grid-column-start: 1;
     grid-column-end:4;
-}
-.staff_short_description {
-    grid-row-start: 6;
-    grid-row-end: 7;
-    grid-column-start: 1;
-    grid-column-end:4;
     margin:0;
 }
-
 
 
 
@@ -2732,42 +2739,39 @@ fieldset span{
 .staff_carousel { width: 100%;
 }
 
-.staff_image {
+
+ .staff_image {
     grid-column-start: 1;
     grid-column-end:4;
-    justify-self: center;
-
+    justify-self: end;
+    justify-content: flex-end; 
  }
  .staff_image img {
     width:45%;
     height:auto;
     padding:0;
+    margin: 0;
 
  }
 
-.slide {
-    grid-template-rows:auto 10px auto 0.5fr 20px auto;
+ .slide {
+    grid-template-rows:auto 0.5fr 0.5fr auto;
 }
 .quatation {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end:4;
+    font-size: 0.875rem;
+
+}
+.staff_short_description {
     grid-row-start: 4;
     grid-row-end: 5;
     grid-column-start: 1;
     grid-column-end:4;
-}
-.staff_short_description {
-    grid-row-start: 6;
-    grid-row-end: 7;
-    grid-column-start: 1;
-    grid-column-end:4;
     margin:0;
 }
-
-
-
- 
-
-
-
 
 
 
@@ -2955,34 +2959,36 @@ fieldset span{
 .staff_image {
     grid-column-start: 1;
     grid-column-end:4;
-    justify-self: center;
+    justify-content: flex-end; 
+
 
  }
  .staff_image img {
     width:45%;
     height:auto;
     padding:0;
+    margin:0;
 
  }
 
-.slide {
-    grid-template-rows:auto 10px auto 0.5fr 20px auto;
+ .slide {
+    grid-template-rows:auto 0.5fr 0.5fr auto;
 }
 .quatation {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end:4;
+    font-size: 0.875rem;
+
+}
+.staff_short_description {
     grid-row-start: 4;
     grid-row-end: 5;
     grid-column-start: 1;
     grid-column-end:4;
-}
-.staff_short_description {
-    grid-row-start: 6;
-    grid-row-end: 7;
-    grid-column-start: 1;
-    grid-column-end:4;
     margin:0;
 }
-
-
 
 
 td {
@@ -3177,37 +3183,38 @@ fieldset span{
 .staff_carousel { width: 100%;
 }
 
-.staff_image {
+ .staff_image {
     grid-column-start: 1;
     grid-column-end:4;
-    justify-self: center;
-
+    justify-self: end;
+    justify-content: flex-end; 
  }
  .staff_image img {
     width:45%;
     height:auto;
     padding:0;
+    margin: 0;
 
  }
 
-.slide {
-    grid-template-rows:auto 10px auto 0.5fr 20px auto;
+ .slide {
+    grid-template-rows:auto 0.5fr 0.5fr auto;
 }
 .quatation {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end:4;
+    font-size: 0.875rem;
+
+}
+.staff_short_description {
     grid-row-start: 4;
     grid-row-end: 5;
     grid-column-start: 1;
     grid-column-end:4;
-}
-.staff_short_description {
-    grid-row-start: 6;
-    grid-row-end: 7;
-    grid-column-start: 1;
-    grid-column-end:4;
     margin:0;
 }
-
-
 
 
 
