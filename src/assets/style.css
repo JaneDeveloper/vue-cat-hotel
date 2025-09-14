@@ -722,7 +722,7 @@ line-height: 1.7;
     background-color: red;
     margin-left: auto;
     margin-right: auto;
-    width: 80vw;
+    width: 90vw;
 }
 
 .scores_of_weight h2 {
@@ -736,7 +736,8 @@ line-height: 1.7;
 
 table {
     border-collapse: collapse;
-    width:40vw;
+    width: clamp(300px, 80vw, 1000px);
+
     margin-left: auto;
     margin-right: auto;
 }
@@ -1182,18 +1183,6 @@ textarea {
 
 
 
-
-
-
-
-
-
-
-
-
-
-      
-
     .pre_btn img,
     .nxt_btn img {
  
@@ -1268,51 +1257,19 @@ textarea {
 
 
 
+
+
+
+
+
+
+
+
   
 
 
-   
-    td {
-        font-size: 35px;
-        line-height:1.3;
-    }
-    td:first-child { 
-        font-size: 35px;
-    }
-    th {
-        font-size:38px;
-    }
-    .scores_of_weight h2 {
-        font-size:38px;
-    }
-    .scores_of_weight {
-        margin-top:10%;
-    }
   
-    .scores_of_weight h3, .calculator h3 {
-        font-size:36px;
-    }
-    label {
-        font-size: 35px;
-    
-    }
-    input {
-        font-size: 35px;
-    }
-    #calculate, #clear_form {
-      margin:5%;
-      padding:10px;
-      border-radius: 10px;
-      
-    }
-    .messages {
-        font-size:38px;
-        margin-right:3%;
-        list-style: none;
-    }
-    table {
-        margin-top:0;
-    }
+  
     .contactinfo h2 {
         font-size: 50px;
     }
@@ -1393,48 +1350,6 @@ textarea {
 
 
 
-    
-
-    td {
-        font-size: 28px;
-        line-height:1.3;
-    }
-    td:first-child { 
-        font-size: 28px;
-    }
-    th {
-        font-size:30px;
-    }
-    .scores_of_weight h2 {
-        font-size:30px;
-    }
-    .scores_of_weight {
-        margin-top:10%;
-    }
-    .scores_of_weight h3, .calculator h3 {
-        font-size:29px;
-    }
-    label {
-        font-size: 28px;
-    
-    }
-    input {
-        font-size: 28px;
-    }
-    #calculate, #clear_form {
-      margin:3%;
-      padding:10px;
-      border-radius: 10px;
-      
-    }
-    .messages {
-        font-size:28px;
-        margin-right:3%;
-        list-style: none;
-    }
-    table {
-        margin-top:0;
-    }
     .contactinfo h2 {
         font-size: 37px;
     }
@@ -1497,55 +1412,7 @@ textarea {
    
 
 
-
-
-
-
-
-
-
-       
-        td {
-            font-size: 24px;
-            line-height:1.3;
-        }
-        td:first-child { 
-            font-size: 24px;
-        }
-        th {
-            font-size:27px;
-        }
-        .scores_of_weight h2 {
-            font-size:26px;
-        }
-        .scores_of_weight h3, .calculator h3 {
-            font-size:25px;
-        }
-        .scores_of_weight {
-            margin-top:10%;
-        }
-        label {
-            font-size: 24px;
-        
-        }
-        input {
-            font-size: 24px;
-        }
-        #calculate, #clear_form {
-          margin:3%;
-          padding:6px;
-          border-radius: 10px;
-          font-size: 24px;
-          
-        }
-        .messages {
-            font-size:24px;
-            margin-right:3%;
-            list-style: none;
-        }
-        table {
-            margin-top:0;
-        }
+      
         .contactinfo h2 {
             font-size: 35px;
         }
@@ -1613,47 +1480,7 @@ textarea {
       
         
       
-        td {
-            font-size: 22px;
-            line-height:1.3;
-        }
-        td:first-child { 
-            font-size: 22px;
-        }
-        th {
-            font-size:23px;
-        }
-        .scores_of_weight h2 {
-            font-size:25px;
-        }
-        .scores_of_weight h3, .calculator h3 {
-            font-size:24px;
-        }
-        .scores_of_weight {
-            margin-top:10%;
-        }
-        label {
-            font-size: 22px;
-        
-        }
-        input {
-            font-size: 22px;
-        }
-        #calculate, #clear_form {
-          margin:3%;
-          padding:6px;
-          border-radius: 10px;
-          font-size: 22px;
-          
-        }
-        .messages {
-            font-size:22px;
-            margin-right:3%;
-            list-style: none;
-        }
-        table {
-            margin-top:0;
-        }
+     
         .contactinfo h2 {
             font-size: 30px;
         }
@@ -1727,47 +1554,7 @@ textarea {
 
         
     
-        td {
-            font-size: 19px;
-            line-height:1.3;
-        }
-        td:first-child { 
-            font-size: 19px;
-        }
-        th {
-            font-size:20px;
-        }
-        .scores_of_weight h2 {
-            font-size:22px;
-        }
-        .scores_of_weight h3, .calculator h3 {
-            font-size:21px;
-        }
-        .scores_of_weight {
-            margin-top:10%;
-        }
-        label {
-            font-size: 19px;
-        
-        }
-        input {
-            font-size: 19px;
-        }
-        #calculate, #clear_form {
-          margin:3%;
-          padding:6px;
-          border-radius: 10px;
-          font-size: 19px;
-          
-        }
-        .messages {
-            font-size:19px;
-            margin-right:3%;
-            list-style: none;
-        }
-        table {
-            margin-top:0;
-        }
+    
         .contactinfo h2 {
             font-size: 30px;
         }
@@ -1840,48 +1627,7 @@ textarea {
     
        
         
-      
-        td {
-            font-size: 18px;
-            line-height:1.3;
-        }
-        td:first-child { 
-            font-size: 18px;
-        }
-        th {
-            font-size:19px;
-        }
-        .scores_of_weight h2 {
-            font-size:20px;
-        }
-        .scores_of_weight h3, .calculator h3 {
-            font-size:19px;
-        }
-        .scores_of_weight {
-            margin-top:10%;
-        }
-        label {
-            font-size: 18px;
-        
-        }
-        input {
-            font-size: 18px;
-        }
-        #calculate, #clear_form {
-          margin:1%;
-          padding:4px;
-          border-radius: 10px;
-          font-size: 18px;
-          
-        }
-        .messages {
-            font-size:18px;
-            margin-right:3%;
-            list-style: none;
-        }
-        table {
-            margin-top:0;
-        }
+     
         .contactinfo h2 {
             font-size: 25px;
         }
@@ -1954,48 +1700,8 @@ textarea {
 
 
    
-    td {
-        font-size: 17px;
-        line-height:1.3;
-    }
-    td:first-child { 
-        font-size: 17px;
-    }
-    th {
-        font-size:18px;
-    }
-    .scores_of_weight h2 {
-        font-size:19px;
-    }
-    .scores_of_weight h3, .calculator h3 {
-        font-size:18px;
-    }
-    .scores_of_weight {
-        margin-top:10%;
-    }
-    label {
-        font-size: 17px;
-    
-    }
-    input {
-        font-size: 17px;
-    }
-    #calculate, #clear_form {
-      margin:1%;
-      padding:4px;
-      border-radius: 10px;
-      font-size: 16px;
-      
-    }
-    
-    .messages {
-        font-size:17px;
-        margin-right:3%;
-        list-style: none;
-    }
-    table {
-        margin-top:0;
-    }
+
+
     .contactinfo h2 {
         font-size: 24px;
     }
@@ -2067,51 +1773,6 @@ textarea {
     
 
 
-
-    
-    
-    td {
-        font-size: 15px;
-        line-height:1.3;
-    }
-    td:first-child { 
-        font-size: 15px;
-    }
-    th {
-        font-size:17px;
-    }
-    .scores_of_weight h2 {
-        font-size:17px;
-    }
-    .scores_of_weight h3, .calculator h3 {
-        font-size:16px;
-    }
-    .scores_of_weight {
-        margin-top:10%;
-    }
-    label {
-        font-size: 15px;
-    
-    }
-    input {
-        font-size: 15px;
-    }
-    #calculate, #clear_form {
-      margin:1%;
-      padding:4px;
-      border-radius: 10px;
-      font-size: 15px;
-      
-    }
-    
-    .messages {
-        font-size:15px;
-        margin-right:3%;
-        list-style: none;
-    }
-    table {
-        margin-top:0;
-    }
     .contactinfo h2 {
         font-size: 18px;
     }
