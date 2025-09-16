@@ -5,9 +5,9 @@
 <article class="calculator_container">
     <div class="scores_of_weight">
         <h2>Find out the ideal weight for your pet.</h2>
-        <h3>Step 1. Evaluate your cat's BCS by examining your pet's ribs,
-             abdomen, and waistline by sight and touch.</h3>
-        <table>
+        <h3 class="step1">Step 1. Evaluate your cat's BCS by examining your pet's ribs,
+            abdomen, and waistline by sight and touch.</h3>    
+   <!--    <table>
             <thead>
                 <tr>
                     <th>Body Condition Score</th>
@@ -79,17 +79,12 @@
                         </td>
                 </tr>
             </tbody>
-        </table>
-    </div>
+        </table> -->
+        <h3 class="step2">Step 2. Calculate your pet's ideal weight.</h3>
 
+    
 
-
-
-
-
-        
-    <div class="calculator">
-        <h3>Step 2. Calculate your pet's ideal weight.</h3>
+        <div class="calculator">
         <div>
             <label for="current_weight">Current weight:</label>
             <input type="text" id="current_weight">
@@ -104,11 +99,19 @@
             <input type="text" id="ideal_weight" disabled>
         </div>
         <div>
-            <label>&nbsp;</label>
             <input type="button" id="calculate" value="Calculate">
             <input type="button" id="clear_form" value="Clear form">
         </div>
     </div>
+    </div>
+
+
+
+
+
+
+        
+    
 </article>
 
 </template>
