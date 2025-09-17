@@ -7,7 +7,7 @@
         <h2>Find out the ideal weight for your pet.</h2>
         <h3 class="step1">Step 1. Evaluate your cat's BCS by examining your pet's ribs,
             abdomen, and waistline by sight and touch.</h3>    
-   <!--    <table>
+       <table>
             <thead>
                 <tr>
                     <th>Body Condition Score</th>
@@ -79,7 +79,7 @@
                         </td>
                 </tr>
             </tbody>
-        </table> -->
+        </table> 
         <h3 class="step2">Step 2. Calculate your pet's ideal weight.</h3>
 
     
