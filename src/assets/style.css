@@ -1116,11 +1116,13 @@ textarea {
    
 }
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 1147px) {
     .scores_of_weight {
         display:grid;
-        grid-template-columns: 100px 1fr 10px 0.5fr 100px ;
+        grid-template-columns: 100px 1fr 10px 1fr 100px;
         grid-template-rows:auto auto auto;
+        min-width: 0;
+
      
     }
     .scores_of_weight h2 {
@@ -1134,7 +1136,7 @@ textarea {
         grid-column-end: 3;
         grid-row-start:2;
         grid-row-end: 3;
-        width: clamp(300px, 80vw, 1000px);
+        width: clamp(200px, 100%, 600px);
         justify-self: end;
 
         
@@ -1146,11 +1148,16 @@ textarea {
         grid-row-start:2;
         grid-row-end: 3;
         justify-self: start;
-        width: clamp(300px, 80vw, 600px);
+        width: clamp(200px, 100%, 600px);
+      
 
 
 
     }
+    .calculator, .step2 {
+        min-width: 0;
+      }
+      
 
 
 
@@ -1173,12 +1180,25 @@ textarea {
     grid-column-end: 5;
     grid-row-start:3;
     grid-row-end: 4;
-    width: clamp(300px, 80vw, 600px);
+    width: clamp(200px, 100%, 600px);
     background-color: #999999;
-    align-self: start; 
-;
+    align-self: start;
 
+  }
+  .step2,
+  .calculator {
+    min-width: 0;
+    width: 100%;
+    max-width: 600px;
+    justify-self: start;
+  }
 
+  .step1,
+  table {
+    min-width: 0;
+    width: 100%;
+    max-width: 1000px;
+    justify-self: end;
   }
   .calculator label, .calculator input {
 background-color:lightblue;
