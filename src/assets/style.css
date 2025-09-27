@@ -764,9 +764,8 @@ tr{
   }
 .calculator div {
     font-size: clamp(1rem, 1vw, 1.375rem);
-    padding:5px;
+    padding:2px;
     padding-left:15px;
-
 }
 .calculator input {
    margin:10px;
@@ -781,7 +780,7 @@ tr{
 }
 #clear_form, #calculate {
     border:none;
-    font-size: clamp(1rem, 1vw, 1.375rem);
+    font-size: clamp(0.875rem, 1vw, 1.375rem);
 
 }
 
@@ -827,114 +826,84 @@ td:first-child {
 }
 form {
     background-color: #DEDFE4;
-    width: 65vw;
-    margin-top: 5%;
-    margin-bottom:10%;
     grid-column-start:1;
-    grid-column-end: 3;
+    grid-column-end: 2;
+    width: clamp(300px, 80vw, 700px);
     margin-left:auto;
     margin-right:auto;
     background-color:green;
 }
-/*form h2 {
-    text-align: center;
-    font-size: 40px;
-    padding:10px;
-    color:white;
-    text-shadow: 4px 8px 4px #000000;
-    opacity:0.9; 
+.contactinfo h2 {
+    font-size: clamp(1rem, 1.5vw + 0.5rem, 2.1875rem);
+}
 
-   
-
-
-}*/
 fieldset {
     background-color: grey;
 }
 .contactinfo h3 {
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    color:white;
-   
-
-   
+    font-size: clamp(0.75rem, 1.2vw + 0.4rem, 1.64rem);   
 }
 
 
 .contactinfo div label {
-    width: 30%;
+    font-size: clamp(1rem, 1vw, 1.375rem);
     display:inline-block;
     text-align:right;
-    margin-top: 20px;
-    margin-bottom:20px;
+    margin-top: 5px;
+    margin-bottom:10px;
+    background-color: red;
     
     
   
 }
 .catinfo h3 {
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    color:white;
-    opacity:0.7;
-    
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: clamp(0.75rem, 1.2vw + 0.4rem, 1.64rem); 
+    background-color:purple;  
 }
 
 
 .catinfo div label {
-    width: 30%;
+    font-size: clamp(1rem, 1vw, 1.375rem);
     display:inline-block;
     text-align:right;
-    margin-top: 10px;
-    margin-top: 20px;
-    margin-bottom:20px;
+    margin-top: 5px;
+    margin-bottom:10px;
+    background-color: red;
   
 }
 
 .reserveinfo h3{
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    color:white;
-    opacity:0.7;
-
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: clamp(0.75rem, 1.2vw + 0.4rem, 1.64rem); 
+    background-color:purple;
 
 }
 .reserveinfo h4 {
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 17px;
-    opacity:0.7;
-    color:white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: clamp(0.75rem, 1.2vw + 0.4rem, 1.64rem);
+    background-color:pink;
+
   
 
 }
 .reserveinfo div {
     margin-top: 20px;
     margin-bottom:20px;
+    background-color:lightyellow;
 }
 .date-picker label {
     margin-left: 10px;
 }
 
 .additionalinfo h3 {
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    color:white;
-    opacity:0.7;
-
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: clamp(0.75rem, 1.2vw + 0.4rem, 1.64rem); 
+    background-color:purple;
 }
 
 
@@ -942,26 +911,18 @@ span {
     color:#790001;
     
 }
-.date-picker {
-    width: 55%;
-    text-align: right;
 
-}
 textarea {
     width: 90%;
 }
 .additionalinfo div{
-   text-align: center;
-    margin-bottom: 20px;
+   font-size: clamp(1rem, 1vw, 1.375rem);
+
 }
 .contactinfo div input, .catinfo div input {
     margin-left:10px;
 }
 
-.additionalinfo div label {
-    float:left;
-    margin-left:5%;
-}
 fieldset {
     margin-top:2%;
 }
@@ -984,6 +945,9 @@ fieldset {
 textarea {
     margin-top: 2%;
 } 
+#checkin_month, #checkin_day,#checkin_year, #checkout_month, #checkout_day, #checkout_year {
+   background-color: #34c5ef;
+}
 /* Responsive Hamburger-navigation starts here  */
 @media all and (max-width: 1146px) {
 
