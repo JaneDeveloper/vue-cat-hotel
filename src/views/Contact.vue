@@ -183,14 +183,14 @@
             <h3>Additional Information</h3>
             <div>
                 <label for="comments">Your wishes, requests, or other Information</label>
-                <textarea name="comments" id="comments" rows="10" cols="45"></textarea>
+                <textarea name="comments" id="comments" rows="6" cols="45"></textarea>
             </div>
             
             <div>
                 <label>&nbsp;</label>
                 <input type = "button" id="btnSubmit" value="Submit">
                 <input type="button" id="clear" value="Clear">
-            </div>
+            </div> 
         </fieldset>
                       
     </form>

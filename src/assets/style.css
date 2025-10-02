@@ -823,12 +823,13 @@ td:first-child {
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows:auto; 
+    background-color: pink;
 }
 form {
     background-color: #DEDFE4;
     grid-column-start:1;
     grid-column-end: 2;
-    width: clamp(300px, 80vw, 700px);
+    width: clamp(300px, 80vw, 1000px);
     margin-left:auto;
     margin-right:auto;
     background-color:green;
@@ -851,10 +852,16 @@ fieldset {
     text-align:right;
     margin-top: 5px;
     margin-bottom:10px;
+    margin-right: 5px;
+
     background-color: red;
     
-    
-  
+}
+.contactinfo div input {
+    font-size: clamp(1rem, 1vw, 1.375rem);
+    margin-top: 5px;
+    margin-bottom:10px;
+
 }
 .catinfo h3 {
     margin-top: 5px;
@@ -871,8 +878,38 @@ fieldset {
     margin-top: 5px;
     margin-bottom:10px;
     background-color: red;
+    margin-right: 5px;
+
   
 }
+.catinfo div input {
+    font-size: clamp(1rem, 1vw, 1.375rem);
+    margin-top: 5px;
+    margin-bottom:10px;
+
+}
+label[for="not_vaccinated"] {
+    margin-left: 1rem;
+}
+.date-picker div {
+    font-size: clamp(1rem, 1vw, 1.375rem);
+
+}
+label[for="checkin-day"],label[for="checkin-year"],
+label[for="checkout-day"],label[for="checkout-year"] {
+    margin-right: 6px;
+    margin-left: 10px;
+    font-size: clamp(1rem, 1vw, 1.375rem);
+}
+label[for="checkin-month"],label[for="checkout-month"] {
+    margin-right:6px;
+}
+.date-picker select {
+    font-size: clamp(1rem, 1vw, 1.375rem);
+
+}
+
+
 
 .reserveinfo h3{
     margin-top: 5px;
@@ -895,15 +932,16 @@ fieldset {
     margin-bottom:20px;
     background-color:lightyellow;
 }
-.date-picker label {
-    margin-left: 10px;
-}
+
 
 .additionalinfo h3 {
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: clamp(0.75rem, 1.2vw + 0.4rem, 1.64rem); 
     background-color:purple;
+}
+.additionalinfo div {
+    font-size: clamp(1rem, 1vw, 1.375rem);
 }
 
 
@@ -915,13 +953,7 @@ span {
 textarea {
     width: 90%;
 }
-.additionalinfo div{
-   font-size: clamp(1rem, 1vw, 1.375rem);
 
-}
-.contactinfo div input, .catinfo div input {
-    margin-left:10px;
-}
 
 fieldset {
     margin-top:2%;
@@ -929,25 +961,33 @@ fieldset {
 #btnSubmit {
     color: white;
     background-color: #262626;
-    opacity:0.7;
-    width:10vw;
-    height:4vh;
+    font-size: clamp(1rem, 1vw, 1.375rem);
+margin-right:10px;
+
+    width:auto;
+    height:3vh;
     border-radius: 10px;
+    min-width: 100px;
+    max-width: 100%;
 }
 #clear {
-    width:10vw;
-    height:4vh;
+    width:auto;
+    height:3vh;
     border-radius: 10px;
     color: white;
     background-color: #262626;
-    opacity:0.7;
+    font-size: clamp(1rem, 1vw, 1.375rem);
+    min-width: 100px;
+    max-width: 100%;
+
 }
 textarea {
     margin-top: 2%;
+    font-size: clamp(1rem, 1vw, 1.375rem);
+
 } 
-#checkin_month, #checkin_day,#checkin_year, #checkout_month, #checkout_day, #checkout_year {
-   background-color: #34c5ef;
-}
+
+
 /* Responsive Hamburger-navigation starts here  */
 @media all and (max-width: 1146px) {
 
@@ -1183,34 +1223,6 @@ background-color:lightblue;
         width:36vw;
     }
  
-
-       
-/*for try
-    .service_container {
-        width: calc(3 * 24vw + 2 * 30px);
-        margin: 0 auto;
-        overflow: hidden; 
-        position: relative;
-      }
-    
-      .service_card {
-        flex: 0 0 24vw;
-        margin: 0;
-      }
-
-      .service_container {
-        scroll-snap-type: x mandatory;
-      }
-    
-      .service_card {
-        scroll-snap-align: start;
-      }
-      */
-
-
-
-
-
     .pre_btn img,
     .nxt_btn img {
  
@@ -1220,59 +1232,10 @@ background-color:lightblue;
 
 
 
-
-
-
-
-  
   
 
+   
 
-
-
-
-        
-    
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /*.contactinfo h2 {
-        font-size: 65px;
-    } */
-
-    .contactinfo div label, .contactinfo div input, .catinfo div label, .catinfo div input, .additionalinfo div label, .date-picker label, .date-picker select {
-        font-size:45px;
-        margin-top:30px;
-    }
-    input[type="radio"] {
-       height:30px;
-       width:30px;
-    }
-    .catinfo h3, .reserveinfo h3, .additionalinfo h3 {
-        font-size:50px;
-    }
-    .reserveinfo h4 {
-        font-size:48px;
-    }
-    fieldset span{
-        font-size:45px;
-    }
        
 }
 /*Responsive website for 2000 screen device.*/
@@ -1282,47 +1245,6 @@ background-color:lightblue;
     }
     .welcome_container {
         width:40vw;
-    }
-
- 
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-  
-  
-    .contactinfo h2 {
-        font-size: 50px;
-    }
-    .contactinfo div label, .contactinfo div input, .catinfo div label, .catinfo div input, .additionalinfo div label, .date-picker label, .date-picker select {
-        font-size:35px;
-    }
-    input[type="radio"] {
-       height:30px;
-       width:30px;
-    }
-    .catinfo h3, .reserveinfo h3, .additionalinfo h3 {
-        font-size:38px;
-    }
-    .reserveinfo h4 {
-        font-size:36px;
-    }
-    fieldset span{
-        font-size:35px;
-    }
-    form {
-        margin-top:10%;
-        margin-bottom:20%;
     }
 
 
@@ -1365,47 +1287,12 @@ background-color:lightblue;
       .service_thumb {
         width:36vw;
         }
+        form {
+        width: clamp(300px, 55vw, 1000px);
+        }
 
 
 
-
-
-  
-
-   
- 
-
-
-
-
-
-
-
-    .contactinfo h2 {
-        font-size: 37px;
-    }
-  
-    .contactinfo div label, .contactinfo div input, .catinfo div label, .catinfo div input, .additionalinfo div label, .date-picker label, .date-picker select {
-        font-size:28px;
-    }
-
-    .contactinfo div input, .catinfo div input {
-        margin-left:10px;
-    }
-    input[type="radio"] {
-       height:28px;
-       width:28px;
-    }
-    .catinfo h3, .reserveinfo h3, .additionalinfo h3 {
-        font-size:30px;
-    }
-    .reserveinfo h4 {
-        font-size:29px;
-    }
-    fieldset span{
-        font-size:28px;
-    }
-   
 
 
 } 
@@ -1438,32 +1325,16 @@ background-color:lightblue;
       .service_thumb {
         width:36vw;
         }
+        form {
+            width: clamp(300px, 55vw, 1000px);
+            }
+    
 
   
    
 
 
-      
-        .contactinfo h2 {
-            font-size: 35px;
-        }
-      
-        .contactinfo div label, .contactinfo div input, .catinfo div label, .catinfo div input, .additionalinfo div label, .date-picker label, .date-picker select {
-            font-size:25px;
-        }
-        input[type="radio"] {
-           height:25px;
-           width:25px;
-        }
-        .catinfo h3, .reserveinfo h3, .additionalinfo h3 {
-            font-size:28px;
-        }
-        .reserveinfo h4 {
-            font-size:26px;
-        }
-        fieldset span{
-            font-size:25px;
-        }
+    
 
 
 
@@ -1503,35 +1374,10 @@ background-color:lightblue;
       .service_thumb {
         width:36vw;
         }
+        form {
+            width: clamp(300px, 55vw, 1000px);
+            }
 
- 
-   
-    
-
-      
-        
-      
-     
-        .contactinfo h2 {
-            font-size: 30px;
-        }
-      
-        .contactinfo div label, .contactinfo div input, .catinfo div label, .catinfo div input, .additionalinfo div label, .date-picker label, .date-picker select {
-            font-size:22px;
-        }
-        input[type="radio"] {
-           height:22px;
-           width:22px;
-        }
-        .catinfo h3, .reserveinfo h3, .additionalinfo h3 {
-            font-size:25px;
-        }
-        .reserveinfo h4 {
-            font-size:23px;
-        }
-        fieldset span{
-            font-size:22px;
-        }
 
     
     } 
@@ -1571,41 +1417,9 @@ background-color:lightblue;
         width:36vw;
         }
 
- 
-   
- 
-
-
-
-
-
-
-
-   
-
-        
-    
-    
-        .contactinfo h2 {
-            font-size: 30px;
-        }
-      
-        .contactinfo div label, .contactinfo div input, .catinfo div label, .catinfo div input, .additionalinfo div label, .date-picker label, .date-picker select {
-            font-size:22px;
-        }
-        input[type="radio"] {
-           height:22px;
-           width:22px;
-        }
-        .catinfo h3, .reserveinfo h3, .additionalinfo h3 {
-            font-size:25px;
-        }
-        .reserveinfo h4 {
-            font-size:23px;
-        }
-        fieldset span{
-            font-size:22px;
-        }
+        form {
+            width: clamp(300px, 55vw, 1000px);
+            }
     
     
    
@@ -1644,41 +1458,13 @@ background-color:lightblue;
         width:36vw;
         }
 
+        form {
+            width: clamp(300px, 55vw, 1000px);
+            }
+    
+
 
   
-  
-
-
-
-
-
-
-
-    
-    
-       
-        
-     
-        .contactinfo h2 {
-            font-size: 25px;
-        }
-      
-        .contactinfo div label, .contactinfo div input, .catinfo div label, .catinfo div input, .additionalinfo div label, .date-picker label, .date-picker select {
-            font-size:18px;
-        }
-        input[type="radio"] {
-           height:18px;
-           width:18px;
-        }
-        .catinfo h3, .reserveinfo h3, .additionalinfo h3 {
-            font-size:20px;
-        }
-        .reserveinfo h4 {
-            font-size:19px;
-        }
-        fieldset span{
-            font-size:18px;
-        }
     
 } 
 
@@ -1715,51 +1501,11 @@ background-color:lightblue;
    
       .service_thumb {
         width:36vw;
+      }
+      form {
+        width: clamp(300px, 55vw, 1000px);
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-
-
-    .contactinfo h2 {
-        font-size: 24px;
-    }
-  
-    .contactinfo div label, .contactinfo div input, .catinfo div label, .catinfo div input, .additionalinfo div label, .date-picker label, .date-picker select {
-        font-size:17px;
-    }
-    .date-picker {
-        width:70%;
-    }
-    input[type="radio"] {
-       height:17px;
-       width:17px;
-    }
-    .catinfo h3, .reserveinfo h3, .additionalinfo h3 {
-        font-size:19px;
-    }
-    .reserveinfo h4 {
-        font-size:18px;
-    }
-    fieldset span{
-        font-size:17px;
-    }
-    #btnSubmit, #clear {
-        width:8vw;
-        font-size:17px;
-    }
 
 }  
 
@@ -1794,45 +1540,13 @@ background-color:lightblue;
       .service_thumb {
         width:79vw;
         }
-
-
-
-
-
-
-
+        form {
+            width: clamp(300px, 55vw, 1000px);
+            }
     
-
-
-    .contactinfo h2 {
-        font-size: 18px;
-    }
-  
-    .contactinfo div label, .contactinfo div input, .catinfo div label, .catinfo div input, .additionalinfo div label, .date-picker label, .date-picker select {
-        font-size:15px;
-    }
-    .date-picker {
-        width:70%;
-    }
-    input[type="radio"] {
-       height:15px;
-       width:15px;
-    }
-    .catinfo h3, .reserveinfo h3, .additionalinfo h3 {
-        font-size:17px;
-    }
-    .reserveinfo h4 {
-        font-size:16px;
-    }
-    fieldset span{
-        font-size:15px;
-    }
-    #btnSubmit, #clear {
-        width:8vw;
-        font-size:15px;
     }
 
-} 
+
 
 
 /* Responsive website for 768 screen device */
@@ -1972,51 +1686,11 @@ margin-right: auto;
 min-width: 0;
 }
 
-
-
-
-                            
-
-
-
-
-
-
-
-
-
-
-.contactinfo h2 {
-    font-size: 18px;
-}
-
-.contactinfo div label, .contactinfo div input, .catinfo div label, .catinfo div input, .additionalinfo div label, .date-picker label, .date-picker select {
-    font-size:15px;
-}
 form {
-    width:80vw;
-}
-.date-picker {
-    width:90%;
-    text-align:left;
-    margin-left:7px;
-}
-input[type="radio"] {
-   height:15px;
-   width:15px;
-}
-.catinfo h3, .reserveinfo h3, .additionalinfo h3 {
-    font-size:17px;
-}
-.reserveinfo h4 {
-    font-size:16px;
-}
-fieldset span{
-    font-size:15px;
-}
-#btnSubmit, #clear {
-    font-size:13px;
-}
+    width: clamp(300px, 65vw, 1000px);
+    }
+
+
 
   
 
@@ -2179,45 +1853,14 @@ fieldset span{
     margin-right: auto;
     min-width: 0;
     }
-    
+  
+
+    form {
+        width: clamp(300px, 90vw, 1000px);
+        }
 
 
 
-
-
-
-.contactinfo h2 {
-    font-size: 18px;
-}
-
-.contactinfo div label, .contactinfo div input, .catinfo div label, .catinfo div input, .additionalinfo div label, .date-picker label, .date-picker select {
-    font-size:15px;
-}
-form {
-    width:80vw;
-}
-.date-picker {
-    width:90%;
-    text-align:left;
-    margin-left:7px;
-}
-input[type="radio"] {
-   height:15px;
-   width:15px;
-}
-.catinfo h3, .reserveinfo h3, .additionalinfo h3 {
-    font-size:17px;
-}
-.reserveinfo h4 {
-    font-size:16px;
-}
-fieldset span{
-    font-size:15px;
-}
-#btnSubmit, #clear {
-    font-size:13px;
-    width:15vw;
-}
 
 
   
@@ -2372,42 +2015,12 @@ fieldset span{
        margin-right: auto;
     }
     
+    form {
+        width: clamp(300px, 90vw, 1000px);
+        }
 
 
 
-
-
-.contactinfo h2 {
-    font-size: 18px;
-}
-
-.contactinfo div label, .contactinfo div input, .catinfo div label, .catinfo div input, .additionalinfo div label, .date-picker label, .date-picker select {
-    font-size:15px;
-}
-form {
-    width:80vw;
-}
-.date-picker {
-    width:100%;
-    text-align:left;
-}
-input[type="radio"] {
-   height:15px;
-   width:15px;
-}
-.catinfo h3, .reserveinfo h3, .additionalinfo h3 {
-    font-size:17px;
-}
-.reserveinfo h4 {
-    font-size:16px;
-}
-fieldset span{
-    font-size:15px;
-}
-#btnSubmit, #clear {
-    font-size:13px;
-    width:15vw;
-}
 
   
 } 
@@ -2552,51 +2165,6 @@ fieldset span{
     }
     
 
-
-
-.contactinfo h2 {
-    font-size: 17px;
-}
-
-.contactinfo div label, .contactinfo div input, .catinfo div label, .catinfo div input, .additionalinfo div label, .date-picker label, .date-picker select {
-    font-size:13px;
-}
-form {
-    width:90vw;
-}
-.date-picker {
-    width:97%;
-    text-align:left;
-    margin-left:2px;
-}
-
-input[type="radio"] {
-   height:13px;
-   width:13px;
-}
-.catinfo h3, .reserveinfo h3, .additionalinfo h3 {
-    font-size:15px;
-}
-.reserveinfo h4 {
-    font-size:14px;
-}
-fieldset span{
-    font-size:13px;
-}
-#btnSubmit, #clear {
-    font-size:13px;
-    width:20vw;
-}
-.contactinfo div input, .catinfo div input {
-    margin-left:0;
-}
-
-.additionalinfo div label {
-    margin-left:0;
-}
-.date-picker label {
-    margin-left: 0;
-}
 
 
 
