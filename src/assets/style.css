@@ -2163,7 +2163,14 @@ form {
        margin-left: auto;
        margin-right: auto;
     }
-    
+    form {
+        width: 100vw;
+        }
+    fieldset {
+        padding:5px;
+        margin:0;
+    }
+
 
 
 
@@ -2308,6 +2315,21 @@ form {
        margin-left: auto;
        margin-right: auto;
     }
+    form {
+        width: 100vw;
+        }
+        fieldset {
+            padding:5px;
+            margin:0;
+        }
+        .date-picker select {
+background-color: purple; 
+
+   
+        }
+     
+
+    
     
 
 
@@ -2319,50 +2341,6 @@ form {
 
 
 
-.contactinfo h2 {
-    font-size: 17px;
-}
-
-.contactinfo div label, .contactinfo div input, .catinfo div label, .catinfo div input, .additionalinfo div label, .date-picker label, .date-picker select {
-    font-size:13px;
-}
-form {
-    width:90vw;
-}
-.date-picker {
-    width:97%;
-    text-align:left;
-    margin-left:2px;
-}
-
-input[type="radio"] {
-   height:13px;
-   width:13px;
-}
-.catinfo h3, .reserveinfo h3, .additionalinfo h3 {
-    font-size:15px;
-}
-.reserveinfo h4 {
-    font-size:14px;
-}
-fieldset span{
-    font-size:13px;
-}
-#btnSubmit, #clear {
-    font-size:13px;
-    width:20vw;
-}
-.contactinfo div input, .catinfo div input {
-    margin-left:0;
-}
-
-.additionalinfo div label {
-    margin-left:0;
-}
-.date-picker label {
-    margin-left: 0;
-}
-  
 } 
 
 
